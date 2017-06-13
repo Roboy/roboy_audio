@@ -1,8 +1,0 @@
-This file describes the testing procedure for the project of beats detection.
-
-You can put any .wav sound file in the same directory as the Main.java lays
-or adjust the code. Name your file "song000.wav" and run the program.
-
-What it outputs are couple of basic info about sound file and the list of the points in 
-time along the sound stream where music percussion beats were found, as follows: 
-Sec,Millisec of the music time and Number of the Sample that a beat begins with.
