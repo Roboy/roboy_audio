@@ -15,6 +15,11 @@ import static java.lang.Math.abs;
  **/
 public class Main
 {
+    public static int define_discretisation()
+    {
+        int d = 0;
+        return d;
+    }
     /**
      * \brief Takes sound file bytes array and finds DATA tag
      * \return end of the tag position
@@ -84,7 +89,7 @@ public class Main
     public static void main(String[] args)
     {
         byte t = 0;
-        int i = 0, j = 0, d = 0, g = 0, n = 0, window = 0,
+        int i = 0, j = 0, d = 0, g = 0, n = 0, window = 0, discretisation = 0,
           bitsPerSample = 0,//16 - bits per sample => 32 bits is enough (8bits*4)
           threshold = 0, //max = 65535
           left_mean = 0, right_mean = 0, max_ampl = 0, period = 0, absolute = 0;//5 sec. - 430000; 3 - 258000
@@ -92,6 +97,7 @@ public class Main
         short smpl_seq = 0;
         Samples cassette = new Samples();
         cassette.initialise("src//song000.wav");
+        discretisation = 44100;//define_discretisation(cassette)
         bitsPerSample += cassette.buffer[35]<0 ? (int)(256+cassette.buffer[35]) : (int)cassette.buffer[35];
         bitsPerSample = bitsPerSample << 8;
         bitsPerSample = cassette.buffer[34]<0 ? (int)(256+cassette.buffer[34]) : (int)cassette.buffer[34];
@@ -103,12 +109,18 @@ public class Main
         window = 200;//100 samples -
         // heuristics! - average noticed time of signal envelope+local_SD crossing the time axis
         n = (cassette.buffer.length-window);
+        System.out.println("Pomme.");
         for (i = d+8+window; i < n; )
         {
+            long delay = 0;
+            long startTime1 = System.nanoTime();
             left_mean = calc_mean(window, i-window, cassette);
             right_mean = calc_mean(window, i, cassette);
+            long endTime1 = System.nanoTime();
+            long hiddenTime1 = endTime1-startTime1;
             if (left_mean < 0 && right_mean > 0)
             {
+                long startTime2 = System.nanoTime();
                 for (j = i+window, t = 0; j < n && t == 0; )
                 {
                     smpl_seq = take_sample(j, cassette);
@@ -125,32 +137,56 @@ public class Main
                     }
                     j+=2;
                 }
+                long endTime2 = System.nanoTime();
+                long hiddenTime2 = endTime2-startTime2;
                 period = j - i;
                 if (period > 1400 && max_ampl > 10000)
                 {
                     absolute = (i-d-8)/2;
-                    System.out.println("beat: "+absolute/44138+","+(absolute%44138)*100/44138+"sec" );
+                    System.out.println("beat: "+
+                                       absolute/discretisation+","+
+                                       (absolute%discretisation)*100/discretisation+"sec" );
                     System.out.println("sample №: "+absolute);
-                    i += 43000;//~1 sec skipped (for future when legs will be completed)
-                    //few further lines are for the realtime dance
-                    /*try
+                    i += discretisation;//0.5 sec skipped (for future when legs will be completed)
+                    //few further lines are for the real-time dance
+                    try
                     {
-                        TimeUnit.MILLISECONDS.sleep(500);
+                        TimeUnit.NANOSECONDS.sleep(500000000-hiddenTime1-hiddenTime2);
                     }
                     catch (InterruptedException ex)
                     {
                         ex.printStackTrace();
-                    }*/
+                    }
                 }
                 else
                 {
                     g = i;
-                    i = (n - j) % 2 == 0 ? j + 2 : j + 1;//for real-time a pause is required
+                    i = (n - j) % 2 == 0 ? j + 2 : j + 1;
+                    delay = (22676*(i-g)/2 - hiddenTime1 - hiddenTime2);
+                    delay = delay > 0 ? delay : 0;
+                    try
+                    {
+                        TimeUnit.NANOSECONDS.sleep(delay);//22675.7... e-9s * 44100 ~= 1 s
+                    }
+                    catch (InterruptedException ex)
+                    {
+                        ex.printStackTrace();
+                    }
                 }
             }
             else
             {
                 i += 2;//for real-time a pause is required
+                /*delay = (22676 - hiddenTime1);
+                delay = delay > 0 ? delay : 0;
+                try
+                {
+                    TimeUnit.NANOSECONDS.sleep(delay);//two half-samples last 22675.7... e-9s (* 44100 ~= 1 s)
+                }
+                catch (InterruptedException ex)
+                {
+                    ex.printStackTrace();
+                }*/
             }
         }
 
