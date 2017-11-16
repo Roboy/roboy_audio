@@ -154,7 +154,7 @@ html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 # The name for this set of Sphinx documents.
 # "<project> v<release> documentation" by default.
 #
-# html_title = u'Software Documentation template v0.0.'
+html_title = u'Audio Documentation v0.0.'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #
