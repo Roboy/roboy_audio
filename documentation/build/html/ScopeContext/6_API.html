@@ -1,0 +1,459 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Public Interfaces &mdash; Roboy Audio 0.0. documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Roboy Audio 0.0. documentation" href="../index.html"/>
+        <link rel="next" title="Solution Strategy" href="../development/00_solution_strategy.html"/>
+        <link rel="prev" title="Design Decisions" href="5_design_decisions.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Roboy Audio
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Usage and Installation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Usage/0_installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Usage/1_getting_started.html">Getting started</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Interfaces and Scope</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="0_system_scope_and_context.html">Context</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1_conventions.html">Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_architecture_constraints.html">Architecture Constraints</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3_technical_interfaces.html">Technical Interfaces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4_user_interface.html">User Interfaces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5_design_decisions.html">Design Decisions</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Public Interfaces</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../development/00_solution_strategy.html">Solution Strategy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development/05_test_strategy.html">Test Strategy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development/06_building_block_view.html">Building Block View</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development/07_runtime_view.html">Runtime View</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development/08_deployment_view.html">Deployment View</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development/9_Libraries.html">Libraries and external Software</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../about-arc42.html">About arc42</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Roboy Audio</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Public Interfaces</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/ScopeContext/6_API.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="public-interfaces">
+<h1>Public Interfaces<a class="headerlink" href="#public-interfaces" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="_CPPv28Nutshell">
+<span id="Nutshell"></span><span class="target" id="class_nutshell"></span><em class="property">class </em><code class="descname">Nutshell</code><a class="headerlink" href="#_CPPv28Nutshell" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="type">
+<dt id="_CPPv2N8Nutshell4ToolE">
+<span id="Nutshell::Tool"></span><span class="target" id="class_nutshell_1ae42034231cf912d095d57cbeed6cda79"></span><em class="property">enum </em><code class="descname">Tool</code><a class="headerlink" href="#_CPPv2N8Nutshell4ToolE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Our tool set. </p>
+<p>The various tools we can opt to use to crack this particular nut </p>
+<p><em>Values:</em></p>
+<dl class="enumerator">
+<dt id="_CPPv2N8Nutshell7kHammerE">
+<span class="target" id="class_nutshell_1ae42034231cf912d095d57cbeed6cda79ad6ed1c9289f0734f74d197b967effb2c"></span><code class="descname">kHammer</code> = 0<a class="headerlink" href="#_CPPv2N8Nutshell7kHammerE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>What? It does the job. </p>
+</dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv2N8Nutshell12kNutCrackersE">
+<span class="target" id="class_nutshell_1ae42034231cf912d095d57cbeed6cda79ad32e3ec374a927a0b6edf29d51e6fcf9"></span><code class="descname">kNutCrackers</code><a class="headerlink" href="#_CPPv2N8Nutshell12kNutCrackersE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Boring. </p>
+</dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv2N8Nutshell19kNinjaThrowingStarsE">
+<span class="target" id="class_nutshell_1ae42034231cf912d095d57cbeed6cda79a1c6cc79780165c195ff7cb7384aba51a"></span><code class="descname">kNinjaThrowingStars</code><a class="headerlink" href="#_CPPv2N8Nutshell19kNinjaThrowingStarsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Stealthy. </p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="function">
+<dt id="_CPPv2N8Nutshell8NutshellEv">
+<span id="Nutshell::Nutshell"></span><span class="target" id="class_nutshell_1a68edae1c44c7a85b889b0cf88e79939f"></span><code class="descname">Nutshell</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv2N8Nutshell8NutshellEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="#class_nutshell"><span class="std std-ref">Nutshell</span></a> constructor. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N8NutshellD0Ev">
+<span id="Nutshell::~Nutshell"></span><span class="target" id="class_nutshell_1aa7e84b812e4489584093a76da864297e"></span><code class="descname">~Nutshell</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv2N8NutshellD0Ev" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="#class_nutshell"><span class="std std-ref">Nutshell</span></a> destructor. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N8Nutshell5crackE4Tool">
+<span id="Nutshell::crack__Tool"></span><span class="target" id="class_nutshell_1a57fc2641156575ef8d655b6c90a1a17d"></span>void <code class="descname">crack</code><span class="sig-paren">(</span><a class="reference internal" href="3_technical_interfaces.html#_CPPv2N8Nutshell4ToolE" title="Nutshell::Tool">Tool</a> <em>tool</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv2N8Nutshell5crackE4Tool" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Crack that shell with specified tool. </p>
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal"><span class="pre">tool</span></code>: - the tool with which to crack the nut </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv2N8Nutshell9isCrackedEv">
+<span id="Nutshell::isCracked"></span><span class="target" id="class_nutshell_1a510c746ef3f7c1b54139124afa657b66"></span>bool <code class="descname">isCracked</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv2N8Nutshell9isCrackedEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>Whether or not the nut is cracked </dd>
+</dl>
+</p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Private Members</p>
+<dl class="member">
+<dt id="_CPPv2N8Nutshell11m_isCrackedE">
+<span id="Nutshell::m_isCracked__b"></span><span class="target" id="class_nutshell_1a144928f8a485dbe64a4db63c2ca5a200"></span>bool <code class="descname">m_isCracked</code><a class="headerlink" href="#_CPPv2N8Nutshell11m_isCrackedE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Our cracked state. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="file">
+<dt>
+<span class="target" id="nutshell_8h"></span><em>file</em> <code class="descname">nutshell.h</code></dt>
+<dd><p>An overly extended example of how to use breathe. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Enums</p>
+<dl class="type">
+<dt id="_CPPv212__anonymous0">
+<span id="__anonymous0"></span><span class="target" id="group__nuttygroup_1ga35b4830c768cfb6224b39e511d219433"></span><em class="property">enum </em><code class="descname"><strong>[anonymous]</strong></code><a class="headerlink" href="#_CPPv212__anonymous0" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="enumerator">
+<dt id="_CPPv212YellowRoller">
+<span class="target" id="group__nuttygroup_1gga35b4830c768cfb6224b39e511d219433a1607b69d49af7846eb7ddc253a196eb2"></span><code class="descname">YellowRoller</code><a class="headerlink" href="#_CPPv212YellowRoller" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv29RedRoller">
+<span class="target" id="group__nuttygroup_1gga35b4830c768cfb6224b39e511d219433aa2fa89c5677f600fa2eaccb7fd196b11"></span><code class="descname">RedRoller</code><a class="headerlink" href="#_CPPv29RedRoller" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv211GreenRoller">
+<span class="target" id="group__nuttygroup_1gga35b4830c768cfb6224b39e511d219433abc5c6db6b8898d4789327d752636bc7f"></span><code class="descname">GreenRoller</code><a class="headerlink" href="#_CPPv211GreenRoller" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="type">
+<dt id="_CPPv212__anonymous1">
+<span id="__anonymous1"></span><span class="target" id="group__nuttygroup2_1gab0472ba248c9be786e0c5a235e513e60"></span><em class="property">enum </em><code class="descname"><strong>[anonymous]</strong></code><a class="headerlink" href="#_CPPv212__anonymous1" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="enumerator">
+<dt id="_CPPv29Chocolate">
+<span class="target" id="group__nuttygroup2_1ggab0472ba248c9be786e0c5a235e513e60a6ea408ea56e8b710aa240004af7580c1"></span><code class="descname">Chocolate</code><a class="headerlink" href="#_CPPv29Chocolate" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv25Mossy">
+<span class="target" id="group__nuttygroup2_1ggab0472ba248c9be786e0c5a235e513e60a0586e7aba8ea4ccece756d604afa8292"></span><code class="descname">Mossy</code><a class="headerlink" href="#_CPPv25Mossy" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv212CremeFraiche">
+<span class="target" id="group__nuttygroup2_1ggab0472ba248c9be786e0c5a235e513e60a8a9408132a8f0f5a2ffba2f7ad75ced9"></span><code class="descname">CremeFraiche</code><a class="headerlink" href="#_CPPv212CremeFraiche" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="group">
+<dt>
+<span class="target" id="group__nuttygroup"></span><em>group</em> <code class="descname">nuttygroup</code></dt>
+<dd><p>The group for all nutjobs. </p>
+<p>No nut can withstand us!</p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Enums</p>
+<dl class="type">
+<dt id="_CPPv2N10nuttygroup12__anonymous0E">
+<span id="nuttygroup::__anonymous0"></span><span class="target" id="group__nuttygroup_1ga35b4830c768cfb6224b39e511d219433"></span><em class="property">enum </em><code class="descname"><strong>[anonymous]</strong></code><a class="headerlink" href="#_CPPv2N10nuttygroup12__anonymous0E" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="enumerator">
+<dt id="_CPPv2N10nuttygroup12YellowRollerE">
+<span class="target" id="group__nuttygroup_1gga35b4830c768cfb6224b39e511d219433a1607b69d49af7846eb7ddc253a196eb2"></span><code class="descname">YellowRoller</code><a class="headerlink" href="#_CPPv2N10nuttygroup12YellowRollerE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv2N10nuttygroup9RedRollerE">
+<span class="target" id="group__nuttygroup_1gga35b4830c768cfb6224b39e511d219433aa2fa89c5677f600fa2eaccb7fd196b11"></span><code class="descname">RedRoller</code><a class="headerlink" href="#_CPPv2N10nuttygroup9RedRollerE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv2N10nuttygroup11GreenRollerE">
+<span class="target" id="group__nuttygroup_1gga35b4830c768cfb6224b39e511d219433abc5c6db6b8898d4789327d752636bc7f"></span><code class="descname">GreenRoller</code><a class="headerlink" href="#_CPPv2N10nuttygroup11GreenRollerE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="group">
+<dt>
+<span class="target" id="group__nuttygroup2"></span><em>group</em> <code class="descname">nuttygroup2</code></dt>
+<dd><p>The group for all nutjobs. </p>
+<p>More documentation for the second group.</p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Enums</p>
+<dl class="type">
+<dt id="_CPPv2N11nuttygroup212__anonymous1E">
+<span id="nuttygroup2::__anonymous1"></span><span class="target" id="group__nuttygroup2_1gab0472ba248c9be786e0c5a235e513e60"></span><em class="property">enum </em><code class="descname"><strong>[anonymous]</strong></code><a class="headerlink" href="#_CPPv2N11nuttygroup212__anonymous1E" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="enumerator">
+<dt id="_CPPv2N11nuttygroup29ChocolateE">
+<span class="target" id="group__nuttygroup2_1ggab0472ba248c9be786e0c5a235e513e60a6ea408ea56e8b710aa240004af7580c1"></span><code class="descname">Chocolate</code><a class="headerlink" href="#_CPPv2N11nuttygroup29ChocolateE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv2N11nuttygroup25MossyE">
+<span class="target" id="group__nuttygroup2_1ggab0472ba248c9be786e0c5a235e513e60a0586e7aba8ea4ccece756d604afa8292"></span><code class="descname">Mossy</code><a class="headerlink" href="#_CPPv2N11nuttygroup25MossyE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv2N11nuttygroup212CremeFraicheE">
+<span class="target" id="group__nuttygroup2_1ggab0472ba248c9be786e0c5a235e513e60a8a9408132a8f0f5a2ffba2f7ad75ced9"></span><code class="descname">CremeFraiche</code><a class="headerlink" href="#_CPPv2N11nuttygroup212CremeFraicheE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="dir">
+<dt>
+<span class="target" id="dir_68267d1309a1af8e8297ef4c3efbcdba"></span><em>dir</em> <code class="descname">/home/parallels/catkin_ws/src/Audio/src</code></dt>
+<dd></dd></dl>
+
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../development/00_solution_strategy.html" class="btn btn-neutral float-right" title="Solution Strategy" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="5_design_decisions.html" class="btn btn-neutral" title="Design Decisions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Raphael Dürscheid, based on Template by Dr. Peter.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.0.',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

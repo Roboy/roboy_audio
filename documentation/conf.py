@@ -66,7 +66,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Software Documentation template'
+project = u'Roboy Audio'
 copyright = u'2016, Raphael Dürscheid, based on Template by Dr. Peter'
 author = u'Raphael Dürscheid, based on Template by Dr. Peter'
 
@@ -254,7 +254,7 @@ html_static_path = ['_static']
 # html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'SoftwareDocumentationtemplatedoc'
+htmlhelp_basename = 'Roboyaudio'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -322,7 +322,7 @@ latex_elements = {
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'SoftwareDocumentationTemplate', u'Software Documentation Template',
+    (master_doc, 'Roboyaudio', u'Roboy Audio',
      [author], 1)
 ]
 
@@ -337,8 +337,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'SoftwareDocumentationTemplate', u'Software Documentation Template',
-     author, 'SoftwareDocumentationTemplate', 'One line description of project.',
+    (master_doc, 'Roboyaudio', u'Roboy Audio',
+     author, 'Roboyaudio', 'Make the ears smart again',
      'Miscellaneous'),
 ]
 
