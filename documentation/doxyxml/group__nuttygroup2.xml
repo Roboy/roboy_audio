@@ -33,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/parallels/git_repos/sw_documentation_template/src/nutshell.h" line="61" column="1" bodyfile="/home/parallels/git_repos/sw_documentation_template/src/nutshell.h" bodystart="61" bodyend="61"/>
+        <location file="/home/parallels/catkin_ws/src/Audio/src/nutshell.h" line="61" column="1" bodyfile="/home/parallels/catkin_ws/src/Audio/src/nutshell.h" bodystart="61" bodyend="61"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

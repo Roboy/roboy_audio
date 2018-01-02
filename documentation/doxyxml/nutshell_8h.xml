@@ -33,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/parallels/git_repos/sw_documentation_template/src/nutshell.h" line="54" column="1" bodyfile="/home/parallels/git_repos/sw_documentation_template/src/nutshell.h" bodystart="54" bodyend="54"/>
+        <location file="/home/parallels/catkin_ws/src/Audio/src/nutshell.h" line="54" column="1" bodyfile="/home/parallels/catkin_ws/src/Audio/src/nutshell.h" bodystart="54" bodyend="54"/>
       </memberdef>
       <memberdef kind="enum" id="group__nuttygroup2_1gab0472ba248c9be786e0c5a235e513e60" prot="public" static="no">
         <name>@1</name>
@@ -64,7 +64,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/parallels/git_repos/sw_documentation_template/src/nutshell.h" line="61" column="1" bodyfile="/home/parallels/git_repos/sw_documentation_template/src/nutshell.h" bodystart="61" bodyend="61"/>
+        <location file="/home/parallels/catkin_ws/src/Audio/src/nutshell.h" line="61" column="1" bodyfile="/home/parallels/catkin_ws/src/Audio/src/nutshell.h" bodystart="61" bodyend="61"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -98,6 +98,6 @@
 <codeline lineno="55"><highlight class="normal"></highlight></codeline>
 <codeline lineno="61"><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/>:<sp/>Mousse<sp/>{<sp/>Chocolate,<sp/>Mossy,<sp/>CremeFraiche<sp/>};<sp/></highlight><highlight class="comment">//<sp/>end<sp/>of<sp/>nuttygroup2</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/home/parallels/git_repos/sw_documentation_template/src/nutshell.h"/>
+    <location file="/home/parallels/catkin_ws/src/Audio/src/nutshell.h"/>
   </compounddef>
 </doxygen>

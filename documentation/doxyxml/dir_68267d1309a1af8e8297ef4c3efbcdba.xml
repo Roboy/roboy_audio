@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
   <compounddef id="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir">
-    <compoundname>/home/parallels/git_repos/sw_documentation_template/src</compoundname>
+    <compoundname>/home/parallels/catkin_ws/src/Audio/src</compoundname>
     <innerfile refid="nutshell_8h">nutshell.h</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/parallels/git_repos/sw_documentation_template/src/"/>
+    <location file="/home/parallels/catkin_ws/src/Audio/src/"/>
   </compounddef>
 </doxygen>
