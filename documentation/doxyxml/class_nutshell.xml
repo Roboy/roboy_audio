@@ -33,7 +33,7 @@
 <para>The various tools we can opt to use to crack this particular nut </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/parallels/catkin_ws/src/Audio/src/nutshell.h" line="23" column="1" bodyfile="/home/parallels/catkin_ws/src/Audio/src/nutshell.h" bodystart="23" bodyend="27"/>
+        <location file="/home/parallels/git_repos/sw_documentation_template/src/nutshell.h" line="23" column="1" bodyfile="/home/parallels/git_repos/sw_documentation_template/src/nutshell.h" bodystart="23" bodyend="27"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -48,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/parallels/catkin_ws/src/Audio/src/nutshell.h" line="47" column="1" bodyfile="/home/parallels/catkin_ws/src/Audio/src/nutshell.h" bodystart="47" bodyend="-1"/>
+        <location file="/home/parallels/git_repos/sw_documentation_template/src/nutshell.h" line="47" column="1" bodyfile="/home/parallels/git_repos/sw_documentation_template/src/nutshell.h" bodystart="47" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -63,7 +63,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/parallels/catkin_ws/src/Audio/src/nutshell.h" line="30" column="1"/>
+        <location file="/home/parallels/git_repos/sw_documentation_template/src/nutshell.h" line="30" column="1"/>
       </memberdef>
       <memberdef kind="function" id="class_nutshell_1aa7e84b812e4489584093a76da864297e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -76,7 +76,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/parallels/catkin_ws/src/Audio/src/nutshell.h" line="33" column="1"/>
+        <location file="/home/parallels/git_repos/sw_documentation_template/src/nutshell.h" line="33" column="1"/>
       </memberdef>
       <memberdef kind="function" id="class_nutshell_1a57fc2641156575ef8d655b6c90a1a17d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -101,7 +101,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/parallels/catkin_ws/src/Audio/src/nutshell.h" line="38" column="1"/>
+        <location file="/home/parallels/git_repos/sw_documentation_template/src/nutshell.h" line="38" column="1"/>
       </memberdef>
       <memberdef kind="function" id="class_nutshell_1a510c746ef3f7c1b54139124afa657b66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -115,14 +115,14 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/parallels/catkin_ws/src/Audio/src/nutshell.h" line="43" column="1"/>
+        <location file="/home/parallels/git_repos/sw_documentation_template/src/nutshell.h" line="43" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/parallels/catkin_ws/src/Audio/src/nutshell.h" line="19" column="1" bodyfile="/home/parallels/catkin_ws/src/Audio/src/nutshell.h" bodystart="19" bodyend="48"/>
+    <location file="/home/parallels/git_repos/sw_documentation_template/src/nutshell.h" line="19" column="1" bodyfile="/home/parallels/git_repos/sw_documentation_template/src/nutshell.h" bodystart="19" bodyend="48"/>
     <listofallmembers>
       <member refid="class_nutshell_1a57fc2641156575ef8d655b6c90a1a17d" prot="public" virt="non-virtual"><scope>Nutshell</scope><name>crack</name></member>
       <member refid="class_nutshell_1a510c746ef3f7c1b54139124afa657b66" prot="public" virt="non-virtual"><scope>Nutshell</scope><name>isCracked</name></member>

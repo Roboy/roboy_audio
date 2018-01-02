@@ -33,6 +33,6 @@
     <member refid="group__nuttygroup2_1ggab0472ba248c9be786e0c5a235e513e60a0586e7aba8ea4ccece756d604afa8292" kind="enumvalue"><name>Mossy</name></member>
     <member refid="group__nuttygroup2_1ggab0472ba248c9be786e0c5a235e513e60a8a9408132a8f0f5a2ffba2f7ad75ced9" kind="enumvalue"><name>CremeFraiche</name></member>
   </compound>
-  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>/home/parallels/catkin_ws/src/Audio/src</name>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>/home/parallels/git_repos/sw_documentation_template/src</name>
   </compound>
 </doxygenindex>
