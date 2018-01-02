@@ -40,7 +40,7 @@ if on_rtd:
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.doctest',
-    #'sphinx.ext.intersphinx',
+    'sphinx.ext.intersphinx',
     'sphinx.ext.todo',
     'sphinx.ext.coverage',
     'sphinx.ext.mathjax',
@@ -66,7 +66,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Audio'
+project = u'Software Documentation template'
 copyright = u'2016, Raphael Dürscheid, based on Template by Dr. Peter'
 author = u'Raphael Dürscheid, based on Template by Dr. Peter'
 
@@ -154,7 +154,7 @@ html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 # The name for this set of Sphinx documents.
 # "<project> v<release> documentation" by default.
 #
-html_title = u'Audio Documentation v0.0.'
+# html_title = u'Software Documentation template v0.0.'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #
@@ -254,7 +254,7 @@ html_static_path = ['_static']
 # html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'AudioDoc'
+htmlhelp_basename = 'SoftwareDocumentationtemplatedoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -322,7 +322,7 @@ latex_elements = {
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'AudioDocumentation', u'Audio Documentation',
+    (master_doc, 'SoftwareDocumentationTemplate', u'Software Documentation Template',
      [author], 1)
 ]
 
@@ -337,8 +337,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'AudioDocumentation', u'Audio Documentation',
-     author, 'AudioDocumentatio', 'Fancy Audio Magic',
+    (master_doc, 'SoftwareDocumentationTemplate', u'Software Documentation Template',
+     author, 'SoftwareDocumentationTemplate', 'One line description of project.',
      'Miscellaneous'),
 ]
 
