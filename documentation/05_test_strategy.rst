@@ -1,12 +1,11 @@
 Test Strategy
 ================
 
-.. todo::
-  If you have any tests describe:
+Describe
 
-  - Where the tests are kept.
-  - How the tests are invoked.
-  - What you can/need to test manually.
+- Where the tests are kept
+- How they are invoced
+- ...
 
 .. _system-tests:
 
@@ -22,3 +21,5 @@ Integration Tests
 
 Unit Tests
 ---------------
+
+
