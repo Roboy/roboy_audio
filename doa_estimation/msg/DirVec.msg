@@ -1,0 +1,2 @@
+float64 azimutal_angle
+float64 polar_angle

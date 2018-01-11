@@ -6,6 +6,7 @@
 #include <fftw3.h>
 #include <stdint.h>
 #include <string.h>
+
 #include <wiringPi.h>
 
 #include <fstream>
@@ -24,6 +25,8 @@
 
 #include <sstream>
 
+#include "doa_estimation/DirVec.h"
+
 DEFINE_bool(big_menu, true, "Include 'advanced' options in the menu listing");
 DEFINE_int32(sampling_frequency, 16000, "Sampling Frequency");
 
@@ -39,7 +42,7 @@ int main(int argc, char *argv[]) {
     // create the NodeHandle
     ros::NodeHandle n;
     // create the publisher
-    ros::Publisher chatter_pub = n.advertise<std_msgs::String>("chatter", 1000);
+    ros::Publisher chatter_pub = n.advertise<doa_estimation::DirVec>("/chatter", 1000);
 
     ros::Rate loop_rate(10);
     google::ParseCommandLineFlags(&argc, &argv, true);
@@ -79,16 +82,18 @@ int main(int argc, char *argv[]) {
                   << ", polar angle = " << polar_angle << ", mic = " << mic
                   << std::endl;
         */
-        std_msgs::String msg;
+        doa_estimation::DirVec msg;
 
         std::stringstream ss;
 
-        ss << "azimutal angle = " << azimutal_angle
+        /*ss << "azimutal angle = " << azimutal_angle
            << ", polar angle = " << polar_angle << ", mic = " << mic
-           << std::endl;
-        msg.data = ss.str();
+           << std::endl;*/
+        msg.azimutal_angle = azimutal_angle;
+        msg.polar_angle = polar_angle;
 
-        ROS_INFO("%s", msg.data.c_str());
+
+        //ROS_INFO("%s", msg.data.c_str());
 
         // publish the data through the publisher
         chatter_pub.publish(msg);
@@ -96,6 +101,7 @@ int main(int argc, char *argv[]) {
         for (hal::LedValue& led : image1d.leds) {
             led.blue = 0;
         }
+
 
         for (int i = led_offset[mic] - 3, j = 0; i < led_offset[mic] + 3;
              ++i, ++j) {
