@@ -18,8 +18,8 @@
 #include <unistd.h>
 #include <string>
 #include <iostream>
-#include "cpp/driver/everloop.h"
-#include "cpp/driver/creator_memory_map.h"
+#include "everloop.h"
+#include "creator_memory_map.h"
 
 namespace matrix_hal {
 

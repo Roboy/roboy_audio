@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "cpp/driver/wishbone_bus.h"
+#include "wishbone_bus.h"
 #include <errno.h>
 #include <fcntl.h>
 #include <linux/spi/spidev.h>
@@ -30,7 +30,7 @@
 #include <unistd.h>
 #include <iostream>
 #include <string>
-#include "cpp/driver/creator_memory_map.h"
+#include "creator_memory_map.h"
 
 namespace matrix_hal {
 
