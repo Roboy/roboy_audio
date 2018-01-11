@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 2.8.3)
+
+project(doa_estimation_msgs)
+
+find_package(catkin REQUIRED message_generation)
+add_message_files(DIRECTORY msg FILES DirVec.msg)
+generate_messages()
+
+catkin_package(CATKIN_DEPENDS message_runtime)
