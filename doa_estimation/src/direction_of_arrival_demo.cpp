@@ -42,7 +42,7 @@ int main(int argc, char *argv[]) {
     // create the NodeHandle
     ros::NodeHandle n;
     // create the publisher
-    ros::Publisher chatter_pub = n.advertise<doa_estimation_msgs::DirVec>("doa", 1000);
+    ros::Publisher chatter_pub = n.advertise<doa_estimation_msgs::DirVec>("/roboy/cognition/audio/direction_of_arrival", 1000);
 
     ros::Rate loop_rate(10);
     google::ParseCommandLineFlags(&argc, &argv, true);
