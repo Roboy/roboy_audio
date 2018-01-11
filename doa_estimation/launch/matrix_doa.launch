@@ -1,0 +1,3 @@
+<launch>
+  <node name="doa_estimater" pkg="doa_estimation" type="doa_estimator" output="screen" />
+</launch>

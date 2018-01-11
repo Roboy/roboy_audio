@@ -38,11 +38,11 @@ int lut[] = {1, 2, 10, 200, 10, 2, 1};
 int main(int argc, char *argv[]) {
 
     // start with init
-    ros::init(argc, argv, "talker");
+    ros::init(argc, argv, "doa_estimater");
     // create the NodeHandle
     ros::NodeHandle n;
     // create the publisher
-    ros::Publisher chatter_pub = n.advertise<doa_estimation_msgs::DirVec>("/chatter", 1000);
+    ros::Publisher chatter_pub = n.advertise<doa_estimation_msgs::DirVec>("doa", 1000);
 
     ros::Rate loop_rate(10);
     google::ParseCommandLineFlags(&argc, &argv, true);

@@ -137,7 +137,7 @@ include_directories(
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-add_executable(${PROJECT_NAME}_node
+add_executable(${PROJECT_NAME}
     src/direction_of_arrival_demo.cpp
     src/direction_of_arrival.cpp
     src/cross_correlation.cpp
@@ -147,7 +147,7 @@ add_executable(${PROJECT_NAME}_node
     src/wishbone_bus.cpp
 )
 
-target_compile_features(${PROJECT_NAME}_node PRIVATE cxx_range_for)
+target_compile_features(${PROJECT_NAME} PRIVATE cxx_range_for)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -157,7 +157,7 @@ target_compile_features(${PROJECT_NAME}_node PRIVATE cxx_range_for)
 
 
 ## Specify libraries to link a library or executable target against
-target_link_libraries(${PROJECT_NAME}_node
+target_link_libraries(${PROJECT_NAME}
     ${catkin_LIBRARIES}
     -lfftw3
     -lfftw3f
@@ -167,7 +167,7 @@ target_link_libraries(${PROJECT_NAME}_node
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
-add_dependencies(${PROJECT_NAME}_node ${catkin_EXPORTED_TARGETS})
+add_dependencies(${PROJECT_NAME} ${catkin_EXPORTED_TARGETS})
 
 #############
 ## Install ##
