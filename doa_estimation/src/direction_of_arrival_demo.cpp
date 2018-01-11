@@ -19,6 +19,11 @@
 #include "microphone_array.h"
 #include "wishbone_bus.h"
 
+#include "ros/ros.h"
+#include "std_msgs/String.h"
+
+#include <sstream>
+
 DEFINE_bool(big_menu, true, "Include 'advanced' options in the menu listing");
 DEFINE_int32(sampling_frequency, 16000, "Sampling Frequency");
 
@@ -27,58 +32,85 @@ namespace hal = matrix_hal;
 int led_offset[] = {23, 27, 32, 1, 6, 10, 14, 19};
 int lut[] = {1, 2, 10, 200, 10, 2, 1};
 
-int main(int argc, char *agrv[]) {
-  google::ParseCommandLineFlags(&argc, &agrv, true);
+int main(int argc, char *argv[]) {
 
-  hal::WishboneBus bus;
-  bus.SpiInit();
+    // start with init
+    ros::init(argc, argv, "talker");
+    // create the NodeHandle
+    ros::NodeHandle n;
+    // create the publisher
+    ros::Publisher chatter_pub = n.advertise<std_msgs::String>("chatter", 1000);
 
-  hal::MicrophoneArray mics;
-  mics.Setup(&bus);
+    ros::Rate loop_rate(10);
+    google::ParseCommandLineFlags(&argc, &argv, true);
 
-  hal::Everloop everloop;
-  everloop.Setup(&bus);
+    hal::WishboneBus bus;
+    bus.SpiInit();
 
-  hal::EverloopImage image1d;
+    hal::MicrophoneArray mics;
+    mics.Setup(&bus);
 
-  int sampling_rate = FLAGS_sampling_frequency;
-  mics.SetSamplingRate(sampling_rate);
-  mics.ShowConfiguration();
-  
-  hal::DirectionOfArrival doa(mics);
-  doa.Init();
+    hal::Everloop everloop;
+    everloop.Setup(&bus);
 
-  float azimutal_angle;
-  float polar_angle;
-  int mic;
+    hal::EverloopImage image1d;
 
-  while (true) {
-    mics.Read(); /* Reading 8-mics buffer from de FPGA */
+    int sampling_rate = FLAGS_sampling_frequency;
+    mics.SetSamplingRate(sampling_rate);
+    mics.ShowConfiguration();
 
-    doa.Calculate();
+    hal::DirectionOfArrival doa(mics);
+    doa.Init();
 
-    azimutal_angle = doa.GetAzimutalAngle() * 180 / M_PI;
-    polar_angle = doa.GetPolarAngle() * 180 / M_PI;
-    mic = doa.GetNearestMicrophone();
+    float azimutal_angle;
+    float polar_angle;
+    int mic;
 
-    std::cout << "azimutal angle = " << azimutal_angle
-              << ", polar angle = " << polar_angle << ", mic = " << mic
-              << std::endl;
+    while (ros::ok()) {
+        mics.Read(); /* Reading 8-mics buffer from de FPGA */
 
-    for (hal::LedValue& led : image1d.leds) {
-      led.blue = 0;
+        doa.Calculate();
+
+        azimutal_angle = doa.GetAzimutalAngle() * 180 / M_PI;
+        polar_angle = doa.GetPolarAngle() * 180 / M_PI;
+        mic = doa.GetNearestMicrophone();
+
+        /*std::cout << "azimutal angle = " << azimutal_angle
+                  << ", polar angle = " << polar_angle << ", mic = " << mic
+                  << std::endl;
+        */
+        std_msgs::String msg;
+
+        std::stringstream ss;
+
+        ss << "azimutal angle = " << azimutal_angle
+           << ", polar angle = " << polar_angle << ", mic = " << mic
+           << std::endl;
+        msg.data = ss.str();
+
+        ROS_INFO("%s", msg.data.c_str());
+
+        // publish the data through the publisher
+        chatter_pub.publish(msg);
+
+        for (hal::LedValue& led : image1d.leds) {
+            led.blue = 0;
+        }
+
+        for (int i = led_offset[mic] - 3, j = 0; i < led_offset[mic] + 3;
+             ++i, ++j) {
+            if (i < 0) {
+                image1d.leds[image1d.leds.size() + i].blue = lut[j];
+            } else {
+                image1d.leds[i % image1d.leds.size()].blue = lut[j];
+            }
+
+            everloop.Write(&image1d);
+        }
+
+        // the typical end of a ros while loop
+        ros::spinOnce();
+        loop_rate.sleep();
     }
-
-    for (int i = led_offset[mic] - 3, j = 0; i < led_offset[mic] + 3;
-         ++i, ++j) {
-      if (i < 0) {
-        image1d.leds[image1d.leds.size() + i].blue = lut[j];
-      } else {
-        image1d.leds[i % image1d.leds.size()].blue = lut[j];
-      }
-
-      everloop.Write(&image1d);
-    }
-  }
-  return 0;
+    return 0;
 }

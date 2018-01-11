@@ -8,9 +8,11 @@ project(doa_estimation)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
-  roscpp
-  std_msgs
+    roscpp
+    std_msgs
+    genmsg
 )
+
 
 # set(FFTW_LIBRARIES usr/lib/arm-linux-gnueabihf/libfftw3f.so)
 # link_directories(usr/lib/arm-linux-gnueabihf)
@@ -108,7 +110,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
   INCLUDE_DIRS include
 #  LIBRARIES doa_estimation
-  CATKIN_DEPENDS roscpp std_msgs
+  CATKIN_DEPENDS roscpp std_msgs genmsg
 #  DEPENDS system_lib
 )
 
@@ -160,8 +162,11 @@ target_compile_features(${PROJECT_NAME}_node PRIVATE cxx_range_for)
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(${PROJECT_NAME}_node
-#  ${catkin_LIBRARIES}
-  -lfftw3 -lfftw3f -lgflags -lwiringPi
+    ${catkin_LIBRARIES}
+    -lfftw3
+    -lfftw3f
+    -lgflags
+    -lwiringPi
 )
 
 #############
