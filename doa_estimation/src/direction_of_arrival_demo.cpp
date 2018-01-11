@@ -25,7 +25,7 @@
 
 #include <sstream>
 
-#include "doa_estimation/DirVec.h"
+#include "doa_estimation_msgs/DirVec.h"
 
 DEFINE_bool(big_menu, true, "Include 'advanced' options in the menu listing");
 DEFINE_int32(sampling_frequency, 16000, "Sampling Frequency");
@@ -42,7 +42,7 @@ int main(int argc, char *argv[]) {
     // create the NodeHandle
     ros::NodeHandle n;
     // create the publisher
-    ros::Publisher chatter_pub = n.advertise<doa_estimation::DirVec>("/chatter", 1000);
+    ros::Publisher chatter_pub = n.advertise<doa_estimation_msgs::DirVec>("/chatter", 1000);
 
     ros::Rate loop_rate(10);
     google::ParseCommandLineFlags(&argc, &argv, true);
@@ -82,7 +82,7 @@ int main(int argc, char *argv[]) {
                   << ", polar angle = " << polar_angle << ", mic = " << mic
                   << std::endl;
         */
-        doa_estimation::DirVec msg;
+        doa_estimation_msgs::DirVec msg;
 
         std::stringstream ss;
 
