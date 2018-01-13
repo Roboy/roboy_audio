@@ -3,15 +3,8 @@
  * All rights reserved.
  */
 #include <gflags/gflags.h>
-#include <fftw3.h>
-#include <stdint.h>
-#include <string.h>
 
 #include <wiringPi.h>
-
-#include <fstream>
-#include <iostream>
-#include <string>
 #include <valarray>
 
 #include "direction_of_arrival.h"
@@ -23,7 +16,6 @@
 #include "ros/ros.h"
 #include "std_msgs/String.h"
 
-#include <sstream>
 
 #include "doa_estimation_msgs/DirVec.h"
 
@@ -36,17 +28,19 @@ int led_offset[] = {23, 27, 32, 1, 6, 10, 14, 19};
 int lut[] = {1, 2, 10, 200, 10, 2, 1};
 
 int main(int argc, char *argv[]) {
-
     // start with init
     ros::init(argc, argv, "doa_estimater");
-    // create the NodeHandle
-    ros::NodeHandle n;
-    // create the publisher
-    ros::Publisher chatter_pub = n.advertise<doa_estimation_msgs::DirVec>("/roboy/cognition/audio/direction_of_arrival", 1000);
 
-    ros::Rate loop_rate(10);
+    // create the NodeHandle and the publisher
+    ros::NodeHandle n;
+    ros::Publisher doa_pub = n.advertise<doa_estimation_msgs::DirVec>("/roboy/cognition/audio/direction_of_arrival", 1000);
+
+    // TODO: find the best value
+    ros::Rate loop_rate(10000);
+
     google::ParseCommandLineFlags(&argc, &argv, true);
 
+    // necessary setups of the bus, mics and leds
     hal::WishboneBus bus;
     bus.SpiInit();
 
@@ -65,44 +59,34 @@ int main(int argc, char *argv[]) {
     hal::DirectionOfArrival doa(mics);
     doa.Init();
 
+    // define the variables that'll contain the result
     float azimutal_angle;
     float polar_angle;
     int mic;
+    doa_estimation_msgs::DirVec msg;
 
     while (ros::ok()) {
         mics.Read(); /* Reading 8-mics buffer from de FPGA */
 
+        // execute the direction of arrival algorithm
         doa.Calculate();
 
+        // get the result
         azimutal_angle = doa.GetAzimutalAngle() * 180 / M_PI;
         polar_angle = doa.GetPolarAngle() * 180 / M_PI;
         mic = doa.GetNearestMicrophone();
 
-        /*std::cout << "azimutal angle = " << azimutal_angle
-                  << ", polar angle = " << polar_angle << ", mic = " << mic
-                  << std::endl;
-        */
-        doa_estimation_msgs::DirVec msg;
-
-        std::stringstream ss;
-
-        /*ss << "azimutal angle = " << azimutal_angle
-           << ", polar angle = " << polar_angle << ", mic = " << mic
-           << std::endl;*/
+        // write the angles into the ros message
         msg.azimutal_angle = azimutal_angle;
         msg.polar_angle = polar_angle;
 
+        // publish the data with the corresponding publisher
+        doa_pub.publish(msg);
 
-        //ROS_INFO("%s", msg.data.c_str());
-
-        // publish the data through the publisher
-        chatter_pub.publish(msg);
-
+        // fire up that LED that lies above the nearest mic
         for (hal::LedValue& led : image1d.leds) {
             led.blue = 0;
         }
-
-
         for (int i = led_offset[mic] - 3, j = 0; i < led_offset[mic] + 3;
              ++i, ++j) {
             if (i < 0) {
