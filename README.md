@@ -1,14 +1,20 @@
-Welcome to the Roboy sw_documentation_template
-===============================================
-[![Documentation Status](http://readthedocs.org/projects/roboy-sw-documentation-template/badge/?version=latest)](http://roboy-sw-documentation-template.readthedocs.io/en/latest/?badge=latest)
+# DialogSystem
+[![Documentation Status](https://readthedocs.org/projects/roboy-audio/badge/?version=master)](http://roboydialog.readthedocs.io/en/master/?badge=master)
 
-Template for documenting software requirements and software architectures
+## What is it?
 
+This repository contains the audio related skills for the humanoid robot Roboy (roboy.org).
 
-Its a sphinx project, just run
-    make html
-to generate the output.
+## How does it work?
 
-The template is based on http://arc42.de/template/index.html
+It procecess the microphone data from Matrix Creator (www.matrix.one) in two different ways. It wether reads the data directly out of the board related FPGA and processes it. Or it streams the data onto a ROS topic, from which on other modules can submit to this topic and process it further.
 
-Its licensed as 'very much resembles the Creative Commons Attribution License': http://arc42.de/template/licence.html
+Most of the things (direct processing, streaming) run in C++. But there is also a template for receiving the stream in Python.
+
+## How to run it?
+
+Will be defined in the future.
+
+## How to extend it?
+
+Write cool stuff and add it to the repo.
