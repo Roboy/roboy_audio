@@ -5,7 +5,7 @@ import audio_common_msgs.msg
 import message_filters
 
 """@package roboy_audio_stream
-This module is a template for receiving the audio streams, sended by the roboy/audio_common/audio_capture module. 
+This module is a template for receiving the audio streams, sended by the roboy/audio_common/roboy_audio_capture module. 
 
 """
 
