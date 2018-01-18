@@ -12,7 +12,7 @@
     <build_depend>std_msgs</build_depend>
     <build_depend>message_generation</build_depend>
     <build_depend>message_runtime</build_depend>
-    <build_depend>audio_common_msgs</build_depend>
+    <build_depend>roboy_communication_cognition</build_depend>
     <build_depend>cmake_modules</build_depend>
     <build_depend>awesome_svcs</build_depend>
 
@@ -20,7 +20,7 @@
     <run_depend>message_generation</run_depend>
     <run_depend>roscpp</run_depend>
     <run_depend>std_msgs</run_depend>
-    <run_depend>audio_common_msgs</run_depend>
+    <run_depend>roboy_communication_cognition</run_depend>
     <build_depend>awesome_svcs</build_depend>
 
 </package>

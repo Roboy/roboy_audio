@@ -32,7 +32,7 @@ FreqOmeter::FreqOmeter(){
 
     // ros publisher
     //ros::Publisher chatter_pub = n.advertise<std_msgs::String>("chatter", 1000);
-    avgPow_pub = n.advertise<std_msgs::Float32>("/roboy/audio/averagePower", 1000);
+    avgPow_pub = n.advertise<roboy_communication_cognition::FreqPower>("/roboy/cognition/audio/freqPower", 1000);
 }
 FreqOmeter::~FreqOmeter(){
     fftwf_free(signal_c);
@@ -94,29 +94,31 @@ void FreqOmeter::init(uint n, uint sampleFrequency){
 }
 
 void FreqOmeter::detectTones(){
-    std_msgs::Float32 msg;
+    roboy_communication_cognition::FreqPower freqPower;
     toneDetected = 0;
     for(uint16_t tone = 0; tone<keyboardFrequency.size(); tone++){
-	if(keyboardFrequency[tone]>=freq_low && keyboardFrequency[tone]<=freq_high){
-	    float averagePower = 0;
-	    uint lowbin = (keyboardFrequency[tone]-frequencyband)*NnextPower2/sampleFreq, 
-		    highbin = (keyboardFrequency[tone]+frequencyband)*NnextPower2/sampleFreq;
-	    for(uint bin = lowbin; bin < highbin; bin++){
-		averagePower+=powr[bin];
-	    }
-	    averagePower/= (float)(highbin-lowbin);
-        // publish this info, for further inspection
-        msg.data = averagePower;
-        avgPow_pub.publish(msg);
-	    if(averagePower>threshold){
-		    toneDetected|=(int16_t)pow(2,tone);
-            awesome_svcs::setLeds msg;
-            msg.request.leds.push_back("eyes");
-            msg.request.color = ledColor[tone];
-            setLeds_srv.call(msg);
-	    }
-	}
+        if(keyboardFrequency[tone]>=freq_low && keyboardFrequency[tone]<=freq_high){
+            float averagePower = 0;
+            uint lowbin = (keyboardFrequency[tone]-frequencyband)*NnextPower2/sampleFreq,
+                highbin = (keyboardFrequency[tone]+frequencyband)*NnextPower2/sampleFreq;
+            for(uint bin = lowbin; bin < highbin; bin++){
+            averagePower+=powr[bin];
+            }
+            averagePower/= (float)(highbin-lowbin);
+            // publish this info, for further inspection
+            freqPower.frequency.push_back(keyboardFrequency[tone]);
+            freqPower.averagePower.push_back(averagePower);
+
+            if(averagePower>threshold){
+                toneDetected|=(int16_t)pow(2,tone);
+                awesome_svcs::setLeds msg;
+                msg.request.leds.push_back("eyes");
+                msg.request.color = ledColor[tone];
+                setLeds_srv.call(msg);
+            }
+        }
     }
+    avgPow_pub.publish(freqPower);
 }
 
 bool FreqOmeter::whichTonesService(awesome_svcs::whichTones::Request  &req,

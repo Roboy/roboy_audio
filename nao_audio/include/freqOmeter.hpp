@@ -24,6 +24,7 @@
 
 // messages
 #include "std_msgs/Float32.h"
+#include "roboy_communication_cognition/FreqPower.h"
 
 using namespace std;
 using namespace std::chrono;

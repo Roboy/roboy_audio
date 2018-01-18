@@ -9,7 +9,7 @@ SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -std=c++11")
 find_package(catkin REQUIRED cmake_modules COMPONENTS
   roscpp
   std_msgs
-  audio_common_msgs
+  roboy_communication_cognition
   awesome_svcs
 )
 
@@ -30,6 +30,6 @@ FILE(GLOB srcs "src/*.cpp")
 ADD_EXECUTABLE( nao_audio ${incs} src/main_microphone.cpp src/freqOmeter.cpp)
 
 ##  !!!! DON'T EVER FUCKING FORGET THIS AGAIN !!!!
-add_dependencies(nao_audio awesome_msgs_generate_messages_cpp awesome_svcs_generate_messages_cpp)
+add_dependencies(nao_audio awesome_svcs_generate_messages_cpp) # awesome_msgs_generate_messages_cpp
 
 TARGET_LINK_LIBRARIES(nao_audio ${catkin_LIBRARIES} -lfftw3f -lncurses)

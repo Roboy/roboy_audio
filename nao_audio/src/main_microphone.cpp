@@ -3,20 +3,21 @@
 #include "freqOmeter.hpp"
 #include <ros/ros.h>
 //#include <naoqi_bridge_msgs/AudioBuffer.h>
-#include "audio_common_msgs/AudioData.h"
+#include "roboy_communication_cognition/AudioData.h"
+
 
 class Microphone{
 public:
     Microphone(){
 	    ROS_INFO("Subscribing to microphone");
 	    //sub = n.subscribe("/nao/nao_robot/microphone/naoqi_microphone/audio_raw", 1, &Microphone::microphoneCB, this);
-        sub = n.subscribe("/mic0/audio", 1, &Microphone::microphoneCB, this);
+        sub = n.subscribe("/roboy/cognition/audio/audio", 1, &Microphone::microphoneCB, this);
 	    freqOmeter.init(5460,16000);
     };
     
 private:
 //    void microphoneCB(naoqi_bridge_msgs::AudioBuffer::ConstPtr buf){
-    void microphoneCB(audio_common_msgs::AudioData::ConstPtr buf){
+    void microphoneCB(roboy_communication_cognition::AudioData::ConstPtr buf){
 //	plot.clear(0);
 //	
 //	plot.array(buf->data,"microphone data", 0);
