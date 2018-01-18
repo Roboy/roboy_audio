@@ -35,8 +35,7 @@ int main(int argc, char *argv[]) {
     ros::NodeHandle n;
     ros::Publisher doa_pub = n.advertise<doa_estimation_msgs::DirVec>("/roboy/cognition/audio/direction_of_arrival", 1000);
 
-    // TODO: find the best value
-    ros::Rate loop_rate(10000);
+    ros::Rate loop_rate(100000);
 
     google::ParseCommandLineFlags(&argc, &argv, true);
 
