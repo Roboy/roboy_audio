@@ -1,5 +1,5 @@
 # DialogSystem
-[![Documentation Status](https://readthedocs.org/projects/roboy-audio/badge/?version=doxy_setup)](http://roboy-audio.readthedocs.io/en/master/?badge=doxy_setup)
+[![Documentation Status](https://readthedocs.org/projects/roboy-audio/badge/?version=doxy_setup)](http://roboy-audio.readthedocs.io/en/doxy_setup/)
 
 ## What is it?
 
