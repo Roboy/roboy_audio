@@ -21,7 +21,7 @@ def stream_listener():
 
     # one subscriber for every of the eight nodes
     for i in range(0, 8):
-        rospy.Subscriber('/audio/mic' + str(i), audio_common_msgs.msg.AudioData, stream_callback)
+        rospy.Subscriber('/roboy/cognition/audio/mic' + str(i), audio_common_msgs.msg.AudioData, stream_callback)
 
     rospy.spin()
 
