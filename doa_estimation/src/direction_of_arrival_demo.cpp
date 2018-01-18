@@ -27,13 +27,23 @@ namespace hal = matrix_hal;
 int led_offset[] = {23, 27, 32, 1, 6, 10, 14, 19};
 int lut[] = {1, 2, 10, 200, 10, 2, 1};
 
+/*!
+ * The main function from the direction of arrival demo. It uses the DirectionOfArrival
+ * class, to estimate the doa. Afterwards it publishes the calculated Information
+ * onto the rostopic '/roboy/cognition/audio/direction_of_arrival'. Like normal
+ * ros nodes, it ends if ros::ok() is false.
+ * @param argc the standard arguments given from the command line call
+ * @param argv the standard arguments given from the command line call
+ * @return
+ */
 int main(int argc, char *argv[]) {
     // start with init
     ros::init(argc, argv, "doa_estimater");
 
     // create the NodeHandle and the publisher
     ros::NodeHandle n;
-    ros::Publisher doa_pub = n.advertise<doa_estimation_msgs::DirVec>("/roboy/cognition/audio/direction_of_arrival", 1000);
+    ros::Publisher doa_pub = n.advertise<doa_estimation_msgs::DirVec>("/roboy/cognition/audio/direction_of_arrival",
+                                                                      1000);
 
     ros::Rate loop_rate(100000);
 
@@ -83,7 +93,7 @@ int main(int argc, char *argv[]) {
         doa_pub.publish(msg);
 
         // fire up that LED that lies above the nearest mic
-        for (hal::LedValue& led : image1d.leds) {
+        for (hal::LedValue &led : image1d.leds) {
             led.blue = 0;
         }
         for (int i = led_offset[mic] - 3, j = 0; i < led_offset[mic] + 3;

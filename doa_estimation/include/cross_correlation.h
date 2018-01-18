@@ -23,9 +23,11 @@
 
 namespace matrix_hal {
 
-/*
-Cross-correlation between signals implemented in frequency domain.
-*/
+//! The cross-correlation class
+/*!
+ * This class implements Cross-correlation between signals in frequency
+ * domain.
+ */
 class CrossCorrelation {
  public:
   CrossCorrelation();

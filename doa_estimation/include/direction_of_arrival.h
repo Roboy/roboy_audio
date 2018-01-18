@@ -25,32 +25,42 @@
 #include "./microphone_array.h"
 
 namespace matrix_hal {
+    //! The Direction of Arrival estimation class
+    /*!
+     * This class manages the other classes and the data, to be able
+     * to provide the estimated direction.
+     */
+    class DirectionOfArrival {
+    public:
+        DirectionOfArrival(MicrophoneArray &mics);
 
-class DirectionOfArrival {
- public:
-  DirectionOfArrival(MicrophoneArray& mics);
-  bool Init();
+        bool Init();
 
-  void Calculate();
+        /*!
+         * The main function, that estimates the direction of arrival.
+         */
+        void Calculate();
 
-  float GetAzimutalAngle() { return azimutal_angle_; }
-  float GetPolarAngle() { return polar_angle_; }
-  int GetNearestMicrophone() { return mic_direction_; }
+        float GetAzimutalAngle() { return azimutal_angle_; }
 
- private:
-  MicrophoneArray& mics_;
-  int length_;
-  CrossCorrelation* corr_;
-  std::valarray<float> current_mag_;
-  std::valarray<float> current_index_;
-  std::valarray<int16_t> buffer_1D_;
-  std::valarray<int16_t*> buffer_2D_;
+        float GetPolarAngle() { return polar_angle_; }
 
-  int getAbsDiff(int index);
+        int GetNearestMicrophone() { return mic_direction_; }
 
-  uint16_t mic_direction_;
-  float azimutal_angle_;
-  float polar_angle_;
-};
+    private:
+        MicrophoneArray &mics_;
+        int length_;
+        CrossCorrelation *corr_;
+        std::valarray<float> current_mag_;
+        std::valarray<float> current_index_;
+        std::valarray<int16_t> buffer_1D_;
+        std::valarray<int16_t *> buffer_2D_;
+
+        int getAbsDiff(int index);
+
+        uint16_t mic_direction_;
+        float azimutal_angle_;
+        float polar_angle_;
+    };
 };      // namespace matrix_hal
 #endif  // CPP_DIRECTION_OF_ARRIVAL_H_
