@@ -27,7 +27,23 @@ In development:
 Contents:
 ----------
 
+.. _usage:
 .. toctree::
-   :maxdepth: 2
+  :maxdepth: 1
+  :glob:
+  :caption: Usage and Installation
+
+  Usage/*
+
+  .. _ScopeContext:
+.. toctree::
+  :maxdepth: 1
+  :glob:
+  :caption: Interfaces and Scope
+
+  ScopeContext/*
+  
+.. toctree::
+   :maxdepth: 1
 
    about-arc42
