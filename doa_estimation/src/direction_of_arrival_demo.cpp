@@ -17,7 +17,7 @@
 #include "std_msgs/String.h"
 
 
-#include "doa_estimation_msgs/DirVec.h"
+#include "roboy_communication_cognition/DirVec.h"
 
 DEFINE_bool(big_menu, true, "Include 'advanced' options in the menu listing");
 DEFINE_int32(sampling_frequency, 16000, "Sampling Frequency");
@@ -42,7 +42,7 @@ int main(int argc, char *argv[]) {
 
     // create the NodeHandle and the publisher
     ros::NodeHandle n;
-    ros::Publisher doa_pub = n.advertise<doa_estimation_msgs::DirVec>("/roboy/cognition/audio/direction_of_arrival",
+    ros::Publisher doa_pub = n.advertise<roboy_communication_cognition::DirVec>("/roboy/cognition/audio/direction_of_arrival",
                                                                       1000);
 
     ros::Rate loop_rate(100000);
@@ -72,7 +72,7 @@ int main(int argc, char *argv[]) {
     float azimutal_angle;
     float polar_angle;
     int mic;
-    doa_estimation_msgs::DirVec msg;
+    roboy_communication_cognition::DirVec msg;
 
     while (ros::ok()) {
         mics.Read(); /* Reading 8-mics buffer from de FPGA */

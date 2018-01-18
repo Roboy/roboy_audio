@@ -4,7 +4,7 @@ project(doa_estimation)
 find_package(catkin REQUIRED COMPONENTS
     roscpp
     std_msgs
-    doa_estimation_msgs
+    roboy_communication_cognition
 )
 
 catkin_package(
