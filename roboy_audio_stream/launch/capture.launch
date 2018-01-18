@@ -8,7 +8,7 @@
   <arg name="ns" default="audio"/>
 
   <group ns="$(arg ns)">
-  <node name="audio_capture" pkg="audio_capture" type="audio_capture" output="screen">
+  <node name="roboy_audio_capture" pkg="roboy_audio_stream" type="roboy_audio_capture" output="screen">
     <param name="bitrate" value="128"/>
     <param name="device" value="$(arg device)"/>
     <param name="channels" value="$(arg channels)"/>
