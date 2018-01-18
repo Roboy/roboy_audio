@@ -1,0 +1,4 @@
+string[] joints
+---
+float32[] currentJointAngles
+float32[] position

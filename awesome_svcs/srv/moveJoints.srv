@@ -1,0 +1,7 @@
+string[] joints
+float32[] angles
+float32 speed
+---
+float32[] currentJointAngles
+float32[] offsets
+string info

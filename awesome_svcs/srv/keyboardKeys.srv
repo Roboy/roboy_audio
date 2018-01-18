@@ -1,0 +1,6 @@
+string[] keys
+---
+string[] keys
+float32[] xcoords
+float32[] ycoords
+float32[] zcoords

@@ -1,0 +1,4 @@
+int8 hand
+---
+float32[] jointAngles
+float32[] stickPosition

@@ -1,0 +1,6 @@
+string chain
+float32[] target
+int32 axismask
+float32 time
+---
+bool result

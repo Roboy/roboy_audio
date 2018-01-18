@@ -1,0 +1,8 @@
+float32 timeInMilliseconds
+bool majorOnly
+---
+float32[] quality
+float32[] purity
+float32 directionZ
+float32[] directionY
+bool hitPin

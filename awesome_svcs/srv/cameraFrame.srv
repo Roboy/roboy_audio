@@ -1,0 +1,5 @@
+int32 frames
+string filename
+int32 camera
+---
+string error

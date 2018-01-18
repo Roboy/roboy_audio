@@ -1,0 +1,3 @@
+string[] joints # e.g. '[LLeg, RLeg]'
+---
+bool success
