@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 
 import rospy
-import audio_common_msgs.msg
+import roboy_communication_cognition.msg
 import message_filters
 
 """@package roboy_audio_stream
-This module is a template for receiving the audio streams, sended by the roboy/audio_common/audio_capture module. 
+This module is a template for receiving the audio streams, sended by the roboy_audio/audio_capture module. 
 
 """
 
@@ -21,7 +21,7 @@ def stream_listener():
 
     # one subscriber for every of the eight nodes
     for i in range(0, 8):
-        rospy.Subscriber('/audio/mic' + str(i), audio_common_msgs.msg.AudioData, stream_callback)
+        rospy.Subscriber('/roboy/cognition/audio/mic' + str(i), roboy_communication_cognition.msg.AudioData, stream_callback)
 
     rospy.spin()
 
