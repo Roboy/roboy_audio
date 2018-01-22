@@ -1,0 +1,28 @@
+<package>
+    <name>roboy_audio_stream</name>
+    <version>0.2.7</version>
+    <description>
+        The roboy_audio_stream package
+        Transports audio from a source to a destination. Audio sources can come
+        from a microphone or file. The destination can play the audio or save it
+        to an mp3 file.
+    </description>
+    <maintainer email="kevin.just@tum.de">Kevin Just</maintainer>
+    <license>BSD</license>
+
+    <buildtool_depend>catkin</buildtool_depend>
+
+    <build_depend>roscpp</build_depend>
+    <build_depend>roboy_communication_cognition</build_depend>
+    <build_depend>libgstreamer1.0-dev</build_depend>
+    <build_depend>libgstreamer-plugins-base1.0-dev</build_depend>
+    <build_depend>rospy</build_depend>
+
+    <run_depend>roscpp</run_depend>
+    <run_depend>roboy_communication_cognition</run_depend>
+    <run_depend>libgstreamer1.0-0</run_depend>
+    <run_depend>libgstreamer-plugins-base1.0-0</run_depend>
+    <run_depend>gstreamer1.0-plugins-ugly</run_depend>
+    <run_depend>gstreamer1.0-plugins-good</run_depend>
+    <run_depend>rospy</run_depend>
+</package>
