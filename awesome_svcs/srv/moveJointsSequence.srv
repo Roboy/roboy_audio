@@ -1,7 +1,0 @@
-string[] joints
-float32[] angles
-float32[] times
----
-float32 currentJointAngle
-float32[] offsets
-string info

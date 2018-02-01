@@ -44,7 +44,7 @@ private:
 
 int main(int argc, char *argv[])
 {
-    ros::init(argc, argv, "nao_audio");
+    ros::init(argc, argv, "keytone_recognition");
     
     Microphone mic;
     

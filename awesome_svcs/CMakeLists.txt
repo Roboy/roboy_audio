@@ -19,31 +19,13 @@ add_service_files(
 	DIRECTORY
 	srv
 	FILES
-# vision services
-	locateStuff.srv
 # control services
-	moveJoint.srv
-	moveJoints.srv
 	moveJointSequence.srv
-	moveJointsSequence.srv
-	moveEndeffector.srv
-	enableStiffness.srv
-	disableStiffness.srv
-	setHandOpen.srv
-	goToPosture.srv
-	sayAloud.srv
-	walkTo.srv
-	queryJoints.srv
-	cameraFrames.srv
-	keyboardKeys.srv
 # audio services
 	whichTones.srv
 	setLeds.srv
 	qualityOfTone.srv
 	qualityOfTones.srv
-# music services
-	selfCalibration.srv
-	reachabilityMap.srv
 )
 
 generate_messages(

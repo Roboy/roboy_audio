@@ -1,6 +1,6 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 
-PROJECT ( nao_audio )
+PROJECT ( keytone_recognition )
 
 SET(DCMAKE_BUILD_TYPE Debug)
 
@@ -27,9 +27,9 @@ include_directories(
 FILE(GLOB incs "include/*.hpp")
 FILE(GLOB srcs "src/*.cpp")
 
-ADD_EXECUTABLE( nao_audio ${incs} src/main_microphone.cpp src/freqOmeter.cpp)
+ADD_EXECUTABLE( keytone_recognition ${incs} src/main_microphone.cpp src/freqOmeter.cpp)
 
 ##  !!!! DON'T EVER FUCKING FORGET THIS AGAIN !!!!
-add_dependencies(nao_audio awesome_svcs_generate_messages_cpp) # awesome_msgs_generate_messages_cpp
+add_dependencies(keytone_recognition awesome_svcs_generate_messages_cpp) # awesome_msgs_generate_messages_cpp
 
-TARGET_LINK_LIBRARIES(nao_audio ${catkin_LIBRARIES} -lfftw3f -lncurses)
+TARGET_LINK_LIBRARIES(keytone_recognition ${catkin_LIBRARIES} -lfftw3f -lncurses)

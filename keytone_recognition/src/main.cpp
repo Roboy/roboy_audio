@@ -34,10 +34,10 @@ int main(int argc, char *argv[])
     
 #ifndef RECORDINGS
     for (uint i=0;i<samples.size();i++){
-        sprintf(str, "/home/hrs2015/catkin_ws/src/nao_audio/samples/%s.wav", samples[i].c_str());
+        sprintf(str, "/home/hrs2015/catkin_ws/src/roboy_audio/keytone_recognition/samples/%s.wav", samples[i].c_str());
 #else
     for (uint i=0;i<30;i++){
-	sprintf(str, "/home/hrs2015/catkin_ws/src/nao_audio/samples/glockenspiel/Voice%d.wav", i);
+	sprintf(str, "/home/hrs2015/catkin_ws/src/roboy_audio/keytone_recognition/samples/glockenspiel/Voice%d.wav", i);
 	samples.push_back(str);
 #endif
         player.loadWav(str);

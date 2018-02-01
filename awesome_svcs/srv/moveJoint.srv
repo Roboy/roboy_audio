@@ -1,7 +1,0 @@
-string joint
-float32 angle
-float32 time
----
-float32 currentJointAngle
-float32 offset
-string info

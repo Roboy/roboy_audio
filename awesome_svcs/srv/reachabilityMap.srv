@@ -1,8 +1,0 @@
-bool clearAll
-bool clearLeft
-bool clearRight
-bool saveLeft
-bool saveRight
-bool saveStickOffsets
----
-
