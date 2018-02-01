@@ -16,11 +16,11 @@
 #include <algorithm>
 
 // services
-#include "awesome_svcs/whichTones.h"
-#include <awesome_svcs/setLeds.h>
-#include <awesome_svcs/qualityOfTone.h>
-#include <awesome_svcs/qualityOfTones.h>
-#include <awesome_svcs/moveJointSequence.h>
+#include <roboy_communication_cognition/whichTones.h>
+#include <roboy_communication_cognition/setLeds.h>
+#include <roboy_communication_cognition/qualityOfTone.h>
+#include <roboy_communication_cognition/qualityOfTones.h>
+#include <roboy_communication_cognition/moveJointSequence.h>
 
 // messages
 #include "std_msgs/Float32.h"
@@ -142,23 +142,23 @@ private:
      * @param req time in milliseconds for detecting the tones
      * @param res tones and timestamps
      */
-    bool whichTonesService(awesome_svcs::whichTones::Request  &req,
-                     awesome_svcs::whichTones::Response &res);
+    bool whichTonesService(roboy_communication_cognition::whichTones::Request  &req,
+                     roboy_communication_cognition::whichTones::Response &res);
     /**
      * Service for a single tone, measuring the quality of a hit with timestamps
      * @param req tone and time in milliseconds for detecting the tone
      * @param res quality (0-1) and purity (value between -1 and +1, -1 is too low, 0 is pure, and +1 is too high)
      */
-    bool qualityOfTone(awesome_svcs::qualityOfTone::Request  &req,
-                       awesome_svcs::qualityOfTone::Response &res);
+    bool qualityOfTone(roboy_communication_cognition::qualityOfTone::Request  &req,
+                       roboy_communication_cognition::qualityOfTone::Response &res);
 
     /**
      * Service for all tones, measuring the quality of a hit with timestamps
      * @param req time in milliseconds for detecting the tone
      * @param res quality (0-1) and purity (value between -1 and +1, -1 is too low, 0 is pure, and +1 is too high)
      */
-    bool qualityOfTones(awesome_svcs::qualityOfTones::Request  &req,
-                       awesome_svcs::qualityOfTones::Response &res);
+    bool qualityOfTones(roboy_communication_cognition::qualityOfTones::Request  &req,
+                       roboy_communication_cognition::qualityOfTones::Response &res);
     /**
      * counts the number of bits set
      * @param i bitmask

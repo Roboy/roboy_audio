@@ -27,8 +27,8 @@ FreqOmeter::FreqOmeter(){
     whichTones_srv = n.advertiseService("/nao/awesome/whichTones", &FreqOmeter::whichTonesService, this);
     qualityOfTone_srv = n.advertiseService("/nao/awesome/qualityOfTone", &FreqOmeter::qualityOfTone, this);
     qualityOfTones_srv = n.advertiseService("/nao/awesome/qualityOfTones", &FreqOmeter::qualityOfTones, this);
-    setLeds_srv = n.serviceClient<awesome_svcs::setLeds>("/nao/awesome/setLeds/");
-    move_jointRelativeSequence_srv=n.serviceClient<awesome_svcs::moveJointSequence>("/nao/awesome/moveJointRelativeSequence/");
+    setLeds_srv = n.serviceClient<roboy_communication_cognition::setLeds>("/nao/awesome/setLeds/");
+    move_jointRelativeSequence_srv=n.serviceClient<roboy_communication_cognition::moveJointSequence>("/nao/awesome/moveJointRelativeSequence/");
 
     // ros publisher
     //ros::Publisher chatter_pub = n.advertise<std_msgs::String>("chatter", 1000);
@@ -111,7 +111,7 @@ void FreqOmeter::detectTones(){
 
             if(averagePower>threshold){
                 toneDetected|=(int16_t)pow(2,tone);
-                awesome_svcs::setLeds msg;
+                roboy_communication_cognition::setLeds msg;
                 msg.request.leds.push_back("eyes");
                 msg.request.color = ledColor[tone];
                 setLeds_srv.call(msg);
@@ -121,8 +121,8 @@ void FreqOmeter::detectTones(){
     avgPow_pub.publish(freqPower);
 }
 
-bool FreqOmeter::whichTonesService(awesome_svcs::whichTones::Request  &req,
-                     awesome_svcs::whichTones::Response &res){
+bool FreqOmeter::whichTonesService(roboy_communication_cognition::whichTones::Request  &req,
+                     roboy_communication_cognition::whichTones::Response &res){
     high_resolution_clock::time_point start = high_resolution_clock::now(), finish, ms;
     ros::Duration samplingTime(0.01), individualTone(0.5);
     bool newTone = false;
@@ -149,8 +149,8 @@ bool FreqOmeter::whichTonesService(awesome_svcs::whichTones::Request  &req,
     return true;
 }
 
-bool FreqOmeter::qualityOfTone(awesome_svcs::qualityOfTone::Request  &req,
-                   awesome_svcs::qualityOfTone::Response &res){
+bool FreqOmeter::qualityOfTone(roboy_communication_cognition::qualityOfTone::Request  &req,
+                   roboy_communication_cognition::qualityOfTone::Response &res){
     vector<string>::const_iterator it;
     bool iKnowThisTone = false;
     uint t, highestTone;
@@ -368,8 +368,8 @@ bool FreqOmeter::qualityOfTone(awesome_svcs::qualityOfTone::Request  &req,
     }
 }
 
-bool FreqOmeter::qualityOfTones(awesome_svcs::qualityOfTones::Request  &req,
-                   awesome_svcs::qualityOfTones::Response &res){
+bool FreqOmeter::qualityOfTones(roboy_communication_cognition::qualityOfTones::Request  &req,
+                   roboy_communication_cognition::qualityOfTones::Response &res){
     
     uint highestTone;
     vector<float> averagePower;
