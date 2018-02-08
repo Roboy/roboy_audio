@@ -77,12 +77,23 @@ int main(int argc, char *argv[]) {
     while (ros::ok()) {
         mics.Read(); /* Reading 8-mics buffer from de FPGA */
 
+        /*
         // execute the direction of arrival algorithm
         doa.Calculate();
 
         // get the result
         azimutal_angle = doa.GetAzimutalAngle() * 180 / M_PI;
         polar_angle = doa.GetPolarAngle() * 180 / M_PI;
+        mic = doa.GetNearestMicrophone();
+        */
+
+
+        // new attempt
+        doa.ImprovedCalculation();
+
+        //get the result
+        azimutal_angle = doa.GetSourxeX();
+        polar_angle = doa.GetSourceY();
         mic = doa.GetNearestMicrophone();
 
         // write the angles into the ros message
@@ -106,6 +117,8 @@ int main(int argc, char *argv[]) {
 
             everloop.Write(&image1d);
         }
+
+
 
         // the typical end of a ros while loop
         ros::spinOnce();

@@ -33,6 +33,7 @@ namespace matrix_hal {
         corr_->Init(mics_.NumberOfSamples());
         current_mag_.resize(4);
         current_index_.resize(4);
+        sample_difference_.resize(7);
         buffer_1D_.resize(mics_.Channels() * mics_.NumberOfSamples());
         buffer_2D_.resize(mics_.Channels());
         mic_direction_ = 0;
@@ -114,6 +115,76 @@ namespace matrix_hal {
         azimutal_angle_ = atan2(micarray_location[mic_direction_][1],
                                 micarray_location[mic_direction_][0]);
         polar_angle_ = fabs(index) * M_PI / 2.0 / float(max_tof - 1);
+
+    }
+
+    void DirectionOfArrival::ImprovedCalculation() {
+        // Max delay in samples between microphones of a pair
+        int max_tof = 6;
+
+        // Prepare buffer for cross correlation calculation between the microphones of a pair
+        for (uint32_t s = 0; s < mics_.NumberOfSamples(); s++) {
+            for (uint16_t c = 0; c < mics_.Channels(); c++) { /* mics_.Channels()=8 */
+                buffer_2D_[c][s] = mics_.At(s, c);
+            }
+        }
+
+        // Loop over the certain pairs (1 to j)
+        for (int channel = 1; channel < 8; channel++) {
+            // Calculate the cross correlation
+            corr_->Exec(buffer_2D_[channel], buffer_2D_[0]);
+
+            float *c = corr_->Result();
+
+            // Find the sample index of the highest peak (beginning of the window)
+            int index = 0;
+            float m = c[0];
+            for (int i = 1; i < max_tof; i++)
+                if (c[i] > m) {
+                    index = i;
+                    m = c[i];
+                }
+
+            // Find the sample index of the highest peak (end of the window)
+            for (int i = length_ - max_tof; i < length_; i++)
+                if (c[i] > m) {
+                    index = i;
+                    m = c[i];
+                }
+
+            // Store the highest value with the index of this microphone pair
+            sample_difference_[channel] = index;
+            time_difference_[channel] = index * TimePerSample;
+        }
+
+        sourceX_ = 0;
+        sourceY_ = 0;
+        for(int i = 0; i < 7; i ++) {
+            sourceX_ += X1jInverse[0][i] * SpeedOfSound * time_difference_[i];
+            sourceY_ += X1jInverse[1][i] * SpeedOfSound * time_difference_[i];
+        }
+
+        float source[2] = {sourceX_, sourceY_};
+
+        float min_diff = L2Norm(micarray_location[0], source);
+        mic_direction_ = 0;
+
+        for (int i = 1; i < 8; i++){
+            float curr_diff = L2Norm(micarray_location[i], source);
+            if (curr_diff < min_diff){
+                min_diff = curr_diff;
+                mic_direction_ = i;
+            }
+        }
+
+
+    }
+
+    float DirectionOfArrival::L2Norm(float *x1, float *x2) {
+        float sum = 0;
+        for(int i = 0; i < 2; i ++)
+            sum += x1[i] * x2[i];
+        return sqrtf(sum)
 
     }
 

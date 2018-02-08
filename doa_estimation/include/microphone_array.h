@@ -32,7 +32,7 @@ namespace matrix_hal {
     const uint16_t kMicarrayBufferSize = 1024;
     const uint16_t kMicrophoneArrayIRQ = 6;
     const uint16_t kMicrophoneChannels = 8;
-
+    const float TimePerSample = 62.5; // milli seconds
 //! The MicrophoneArray class
 /*!
  * This class builds the Hardware Abstraction Layer between the
