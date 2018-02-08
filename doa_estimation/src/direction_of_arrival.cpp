@@ -34,6 +34,7 @@ namespace matrix_hal {
         current_mag_.resize(4);
         current_index_.resize(4);
         sample_difference_.resize(7);
+        time_difference_.resize(7);
         buffer_1D_.resize(mics_.Channels() * mics_.NumberOfSamples());
         buffer_2D_.resize(mics_.Channels());
         mic_direction_ = 0;
@@ -184,7 +185,7 @@ namespace matrix_hal {
         float sum = 0;
         for(int i = 0; i < 2; i ++)
             sum += x1[i] * x2[i];
-        return sqrtf(sum)
+        return sqrtf(sum);
 
     }
 
