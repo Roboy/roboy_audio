@@ -44,6 +44,8 @@ namespace matrix_hal {
 
         void ImprovedCalculation();
 
+        void ImprovedCalculationMatrix();
+
         float GetAzimutalAngle() { return azimutal_angle_; }
 
         float GetPolarAngle() { return polar_angle_; }

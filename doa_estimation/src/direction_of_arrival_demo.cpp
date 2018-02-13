@@ -94,7 +94,7 @@ int main(int argc, char *argv[]) {
         //get the result
         azimutal_angle = doa.GetSourxeX();
         polar_angle = doa.GetSourceY();
-        mic = doa.GetNearestMicrophone();
+        //mic = doa.GetNearestMicrophone();
 
         // write the angles into the ros message
         msg.azimutal_angle = azimutal_angle;
@@ -102,7 +102,7 @@ int main(int argc, char *argv[]) {
 
         // publish the data with the corresponding publisher
         doa_pub.publish(msg);
-
+        /*
         // fire up that LED that lies above the nearest mic
         for (hal::LedValue &led : image1d.leds) {
             led.blue = 0;
@@ -116,7 +116,7 @@ int main(int argc, char *argv[]) {
             }
 
             everloop.Write(&image1d);
-        }
+        }*/
 
 
 

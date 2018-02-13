@@ -165,7 +165,7 @@ namespace matrix_hal {
             sourceY_ += X1jInverse[1][i] * SpeedOfSound * time_difference_[i];
         }
 
-        float source[2] = {sourceX_, sourceY_};
+        /*float source[2] = {sourceX_, sourceY_};
 
         float min_diff = L2Norm(micarray_location[0], source);
         mic_direction_ = 0;
@@ -176,8 +176,37 @@ namespace matrix_hal {
                 min_diff = curr_diff;
                 mic_direction_ = i;
             }
+        }*/
+
+
+    }
+
+    void DirectionOfArrival::ImprovedCalculationMatrix() {
+        // Max delay in samples between microphones of a pair
+        int max_tof = 6;
+
+        // Prepare buffer for cross correlation calculation between the microphones of a pair
+        for (uint32_t s = 0; s < mics_.NumberOfSamples(); s++) {
+            for (uint16_t c = 0; c < mics_.Channels(); c++) { /* mics_.Channels()=8 */
+                buffer_2D_[c][s] = mics_.At(s, c);
+            }
         }
 
+        float corr_matrix[8][8];
+        // Loop over the certain pairs (1 to j)
+        for (int channel = 0; channel < 8; channel++) {
+            for(int channel2 = channel; channel2 < 8; channel2++) {
+                // Calculate the cross correlation
+                // Corr(f(x),g(x)) = sum_i f[i] * g[i]
+                // no complex conjugate since everything is real
+                float corr = 0;
+                for (int i = 0; i < length_; i ++)
+                    corr += buffer_2D_[channel][i] * buffer_2D_[channel2][i];
+
+                corr_matrix[channel][channel2] = corr;
+                corr_matrix[channel2][channel] = corr;
+            }
+        }
 
     }
 
