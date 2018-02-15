@@ -21,6 +21,7 @@
 #include <string>
 #include <valarray>
 #include <math.h>
+#include <Eigenvalues>
 
 #include "./cross_correlation.h"
 #include "./microphone_array.h"

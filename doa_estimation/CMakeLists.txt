@@ -16,6 +16,7 @@ catkin_package(
 
 include_directories(
   include ${catkin_INCLUDE_DIRS}
+  Eigen
 )
 
 add_executable(${PROJECT_NAME}

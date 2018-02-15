@@ -18,6 +18,7 @@
 #include <cmath>
 #include <map>
 #include <string>
+#include <iostream>
 
 #include "cross_correlation.h"
 #include "direction_of_arrival.h"
@@ -192,7 +193,8 @@ namespace matrix_hal {
             }
         }
 
-        float corr_matrix[8][8];
+        //float corr_matrix[8][8];
+        Eigen::MatrixXf corr_matrix(8, 8);
         // Loop over the certain pairs (1 to j)
         for (int channel = 0; channel < 8; channel++) {
             for(int channel2 = channel; channel2 < 8; channel2++) {
@@ -203,10 +205,14 @@ namespace matrix_hal {
                 for (int i = 0; i < length_; i ++)
                     corr += buffer_2D_[channel][i] * buffer_2D_[channel2][i];
 
-                corr_matrix[channel][channel2] = corr;
-                corr_matrix[channel2][channel] = corr;
+                corr_matrix(channel, channel2) = corr;
+                corr_matrix(channel2, channel) = corr;
             }
         }
+        std::cout << "The eigenvalues of the Correlation Matrix: "
+                  << std::endl
+                  << corr_matrix.eigenvalues()
+                  << std::endl;
 
     }
 
