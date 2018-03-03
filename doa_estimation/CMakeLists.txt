@@ -27,7 +27,8 @@ add_executable(${PROJECT_NAME}
     src/microphone_array.cpp
     src/everloop.cpp
     src/wishbone_bus.cpp
-)
+    src/music_spectrum.cpp
+    )
 
 target_compile_features(${PROJECT_NAME} PRIVATE cxx_range_for)
 
