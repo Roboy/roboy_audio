@@ -25,9 +25,9 @@ DEFINE_int32(sampling_frequency, 16000, "Sampling Frequency");
 namespace hal = matrix_hal;
 
 int main(int argc, char *argv[]) {
-    ros::init(argc, argv, "data_collecter");
+    //ros::init(argc, argv, "data_collecter");
 
-    ros::NodeHandle n;
+    //ros::NodeHandle n;
 
     google::ParseCommandLineFlags(&argc, &argv, true);
 
@@ -42,28 +42,33 @@ int main(int argc, char *argv[]) {
     mics.SetSamplingRate(sampling_rate);
     mics.ShowConfiguration();
 
-    std::ofstream data_file[8];
+    std::ofstream data_file[mics.Channels()];
     for(int i = 0; i < mics.Channels(); i++){
         std::stringstream file_name;
-        file_name << "/home/roboy/workspace/src/roboy_audio/doa_estimation/data/mic_" << i << ".csv";
-        data_file[i].open(file_name.str(), std::ofstream::out);
+        file_name << "/home/roboy/mic_" << i << ".csv";
+        //data_file[i].open(file_name.str());
+        std::cout << file_name << std::endl;
     }
-    for(int i = 0; mics.Channels(); i++) {
+    /*for(int i = 0; mics.Channels(); i++) {
         for(int s = 0; s < mics.NumberOfSamples(); s++)
             data_file[i] << s << ";";
-        data_file[i] << std::endl;
+        data_file[i] << "\n";
     }
 
     for(int i = 0; i < 10; i++) {
         mics.Read();
 
-        for(int c = 0; c < mics.Channels(); c++){
-            for (int s = 0; s < mics.NumberOfSamples(); s++)
+        for(int16_t c = 0; c < mics.Channels(); c++){
+            for (int16_t s = 0; s < mics.NumberOfSamples(); s++)
                 data_file[c] << mics.At(s, c) << ";";
-            data_file[c] << std::endl;
+            data_file[c] << "\n";
         }
     }
 
     for(int i = 0; mics.Channels(); i++)
         data_file[i].close();
+    */
+    std::ofstream example_file("/home/roboy/example.csv");
+    example_file << "example text" << std::endl;
+    example_file.close();
 }
