@@ -25,6 +25,12 @@ DEFINE_int32(sampling_frequency, 16000, "Sampling Frequency");
 namespace hal = matrix_hal;
 
 int main(int argc, char *argv[]) {
+    ros::init(argc, argv, "data_collecter");
+
+    ros::NodeHandle n;
+
+    google::ParseCommandLineFlags(&argc, &argv, true);
+
     // necessary setups of the bus, mics and leds
     hal::WishboneBus bus;
     bus.SpiInit();
@@ -39,7 +45,7 @@ int main(int argc, char *argv[]) {
     std::ofstream data_file[8];
     for(int i = 0; i < mics.Channels(); i++){
         std::stringstream file_name;
-        file_name << "mic_" << i << ".csv";
+        file_name << "/home/roboy/workspace/src/roboy_audio/doa_estimation/data/mic_" << i << ".csv";
         data_file[i].open(file_name.str(), std::ofstream::out);
     }
     for(int i = 0; mics.Channels(); i++) {
