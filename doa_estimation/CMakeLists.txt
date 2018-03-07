@@ -30,7 +30,21 @@ add_executable(${PROJECT_NAME}
     src/music_spectrum.cpp
     )
 
+add_executable(collect_data
+    src/collect_data.cpp
+    src/direction_of_arrival.cpp
+    src/cross_correlation.cpp
+    src/matrix_driver.cpp
+    src/microphone_array.cpp
+    src/everloop.cpp
+    src/wishbone_bus.cpp
+    src/music_spectrum.cpp
+    )
+
+
+
 target_compile_features(${PROJECT_NAME} PRIVATE cxx_range_for)
+target_compile_features(collect_data PRIVATE cxx_range_for)
 
 target_link_libraries(${PROJECT_NAME}
     ${catkin_LIBRARIES}
@@ -39,5 +53,11 @@ target_link_libraries(${PROJECT_NAME}
     -lgflags
     -lwiringPi
 )
+target_link_libraries(collect_data
+        ${catkin_LIBRARIES}
+        -lgflags
+        -lwiringPi
+        )
 
 add_dependencies(${PROJECT_NAME} ${catkin_EXPORTED_TARGETS})
+add_dependencies(collect_data ${catkin_EXPORTED_TARGETS})
