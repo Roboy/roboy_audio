@@ -1,7 +1,7 @@
 #include "music_spectrum.h"
 
 
-void MusicSpectrum::MusicSpectrum(int N, int M) {
+MusicSpectrum::MusicSpectrum(int N, int M) {
     _N = N;
     _M = M;
 

@@ -2,17 +2,27 @@
 // Created by parallels on 3/7/18.
 //
 
-#include <wiringPi.h>
 #include <gflags/gflags.h>
 
-#include "microphone_array.h
+#include <wiringPi.h>
+#include <valarray>
+
+#include "direction_of_arrival.h"
+#include "everloop.h"
+#include "everloop_image.h"
+#include "microphone_array.h"
+#include "wishbone_bus.h"
+
+#include "ros/ros.h"
+#include "std_msgs/String.h"
+
 #include <fstream>
 #include <sstream>
 
 DEFINE_bool(big_menu, true, "Include 'advanced' options in the menu listing");
 DEFINE_int32(sampling_frequency, 16000, "Sampling Frequency");
 
-namespace hal = matrix_hal
+namespace hal = matrix_hal;
 
 int main(int argc, char *argv[]) {
     // necessary setups of the bus, mics and leds
@@ -30,7 +40,7 @@ int main(int argc, char *argv[]) {
     for(int i = 0; i < mics.Channels(); i++){
         std::stringstream file_name;
         file_name << "mic_" << i << ".csv";
-        data_file[i].open(file_name.str(), std::basic_ofstream::binary);
+        data_file[i].open(file_name.str(), std::ofstream::out);
     }
     for(int i = 0; mics.Channels(); i++) {
         for(int s = 0; s < mics.NumberOfSamples(); s++)

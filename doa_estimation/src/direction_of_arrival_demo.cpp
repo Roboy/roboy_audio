@@ -92,16 +92,16 @@ int main(int argc, char *argv[]) {
         doa.ImprovedCalculationMatrix();
 
         //get the result
-        azimutal_angle = doa.GetSourxeX();
-        polar_angle = doa.GetSourceY();
+//        azimutal_angle = doa.GetSourxeX();
+//        polar_angle = doa.GetSourceY();
         //mic = doa.GetNearestMicrophone();
 
         // write the angles into the ros message
-        msg.azimutal_angle = azimutal_angle;
-        msg.polar_angle = polar_angle;
+//        msg.azimutal_angle = azimutal_angle;
+//        msg.polar_angle = polar_angle;
 
         // publish the data with the corresponding publisher
-        doa_pub.publish(msg);
+//        doa_pub.publish(msg);
         /*
         // fire up that LED that lies above the nearest mic
         for (hal::LedValue &led : image1d.leds) {

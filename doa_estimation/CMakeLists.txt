@@ -27,7 +27,7 @@ add_executable(${PROJECT_NAME}
     src/microphone_array.cpp
     src/everloop.cpp
     src/wishbone_bus.cpp
-    src/music_spectrum.cpp
+    #src/music_spectrum.cpp
     )
 
 add_executable(collect_data
@@ -38,7 +38,7 @@ add_executable(collect_data
     src/microphone_array.cpp
     src/everloop.cpp
     src/wishbone_bus.cpp
-    src/music_spectrum.cpp
+   # src/music_spectrum.cpp
     )
 
 
@@ -55,6 +55,8 @@ target_link_libraries(${PROJECT_NAME}
 )
 target_link_libraries(collect_data
         ${catkin_LIBRARIES}
+	-lfftw3
+	-lfftw3f
         -lgflags
         -lwiringPi
         )
