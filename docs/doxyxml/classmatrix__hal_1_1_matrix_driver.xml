@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classmatrix__hal_1_1_matrix_driver" kind="class" language="C++" prot="public">
+    <compoundname>matrix_hal::MatrixDriver</compoundname>
+    <derivedcompoundref refid="classmatrix__hal_1_1_everloop" prot="public" virt="non-virtual">matrix_hal::Everloop</derivedcompoundref>
+    <derivedcompoundref refid="classmatrix__hal_1_1_microphone_array" prot="public" virt="non-virtual">matrix_hal::MicrophoneArray</derivedcompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classmatrix__hal_1_1_matrix_driver_1a5c4fbeb8c4885782ff1f7a910f19e5bf" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmatrix__hal_1_1_wishbone_bus" kindref="compound">WishboneBus</ref> *</type>
+        <definition>WishboneBus* matrix_hal::MatrixDriver::wishbone_</definition>
+        <argsstring></argsstring>
+        <name>wishbone_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/matrix_driver.h" line="32" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/matrix_driver.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmatrix__hal_1_1_matrix_driver_1a7c7d6d65b485ed3326b46d32c38fd47b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void matrix_hal::MatrixDriver::Setup</definition>
+        <argsstring>(WishboneBus *wishbone)</argsstring>
+        <name>Setup</name>
+        <param>
+          <type><ref refid="classmatrix__hal_1_1_wishbone_bus" kindref="compound">WishboneBus</ref> *</type>
+          <declname>wishbone</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/matrix_driver.h" line="29" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/src/matrix_driver.cpp" bodystart="23" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="24">
+        <label>matrix_hal::Everloop</label>
+        <link refid="classmatrix__hal_1_1_everloop"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>matrix_hal::MatrixDriver</label>
+        <link refid="classmatrix__hal_1_1_matrix_driver"/>
+      </node>
+      <node id="25">
+        <label>matrix_hal::MicrophoneArray</label>
+        <link refid="classmatrix__hal_1_1_microphone_array"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="27">
+        <label>matrix_hal::WishboneBus</label>
+        <link refid="classmatrix__hal_1_1_wishbone_bus"/>
+      </node>
+      <node id="26">
+        <label>matrix_hal::MatrixDriver</label>
+        <link refid="classmatrix__hal_1_1_matrix_driver"/>
+        <childnode refid="27" relation="usage">
+          <edgelabel>wishbone_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/matrix_driver.h" line="27" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/matrix_driver.h" bodystart="27" bodyend="33"/>
+    <listofallmembers>
+      <member refid="classmatrix__hal_1_1_matrix_driver_1a7c7d6d65b485ed3326b46d32c38fd47b" prot="public" virt="non-virtual"><scope>matrix_hal::MatrixDriver</scope><name>Setup</name></member>
+      <member refid="classmatrix__hal_1_1_matrix_driver_1a5c4fbeb8c4885782ff1f7a910f19e5bf" prot="protected" virt="non-virtual"><scope>matrix_hal::MatrixDriver</scope><name>wishbone_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

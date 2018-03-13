@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classmatrix__hal_1_1_everloop" kind="class" language="C++" prot="public">
+    <compoundname>matrix_hal::Everloop</compoundname>
+    <basecompoundref refid="classmatrix__hal_1_1_matrix_driver" prot="public" virt="non-virtual">matrix_hal::MatrixDriver</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmatrix__hal_1_1_everloop_1aa392c536d682354373232be5276bae00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>matrix_hal::Everloop::Everloop</definition>
+        <argsstring>()</argsstring>
+        <name>Everloop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/everloop.h" line="29" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/src/everloop.cpp" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classmatrix__hal_1_1_everloop_1a275fbc93b7843c161e51194d544e9714" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool matrix_hal::Everloop::Write</definition>
+        <argsstring>(const EverloopImage *led_image)</argsstring>
+        <name>Write</name>
+        <param>
+          <type>const <ref refid="classmatrix__hal_1_1_everloop_image" kindref="compound">EverloopImage</ref> *</type>
+          <declname>led_image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/everloop.h" line="30" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/src/everloop.cpp" bodystart="28" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="10">
+        <label>matrix_hal::Everloop</label>
+        <link refid="classmatrix__hal_1_1_everloop"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>matrix_hal::MatrixDriver</label>
+        <link refid="classmatrix__hal_1_1_matrix_driver"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="12">
+        <label>matrix_hal::Everloop</label>
+        <link refid="classmatrix__hal_1_1_everloop"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>matrix_hal::WishboneBus</label>
+        <link refid="classmatrix__hal_1_1_wishbone_bus"/>
+      </node>
+      <node id="13">
+        <label>matrix_hal::MatrixDriver</label>
+        <link refid="classmatrix__hal_1_1_matrix_driver"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>wishbone_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/everloop.h" line="27" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/everloop.h" bodystart="27" bodyend="31"/>
+    <listofallmembers>
+      <member refid="classmatrix__hal_1_1_everloop_1aa392c536d682354373232be5276bae00" prot="public" virt="non-virtual"><scope>matrix_hal::Everloop</scope><name>Everloop</name></member>
+      <member refid="classmatrix__hal_1_1_matrix_driver_1a7c7d6d65b485ed3326b46d32c38fd47b" prot="public" virt="non-virtual"><scope>matrix_hal::Everloop</scope><name>Setup</name></member>
+      <member refid="classmatrix__hal_1_1_matrix_driver_1a5c4fbeb8c4885782ff1f7a910f19e5bf" prot="protected" virt="non-virtual"><scope>matrix_hal::Everloop</scope><name>wishbone_</name></member>
+      <member refid="classmatrix__hal_1_1_everloop_1a275fbc93b7843c161e51194d544e9714" prot="public" virt="non-virtual"><scope>matrix_hal::Everloop</scope><name>Write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

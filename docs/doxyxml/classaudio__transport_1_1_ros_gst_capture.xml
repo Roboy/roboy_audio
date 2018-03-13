@@ -1,0 +1,369 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classaudio__transport_1_1_ros_gst_capture" kind="class" language="C++" prot="public">
+    <compoundname>audio_transport::RosGstCapture</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classaudio__transport_1_1_ros_gst_capture_1a93f6c8fd41cabb0616f2f7bd18ec5c59" prot="private" static="no" mutable="no">
+        <type>ros::NodeHandle</type>
+        <definition>ros::NodeHandle audio_transport::RosGstCapture::_nh</definition>
+        <argsstring></argsstring>
+        <name>_nh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" line="197" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaudio__transport_1_1_ros_gst_capture_1a0d620309054a6ae1ddf72f356b2f3012" prot="private" static="no" mutable="no">
+        <type>ros::Publisher</type>
+        <definition>ros::Publisher audio_transport::RosGstCapture::_pub</definition>
+        <argsstring></argsstring>
+        <name>_pub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" line="198" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaudio__transport_1_1_ros_gst_capture_1a3b89e4b70e6bf25706ca1d76ec33610f" prot="private" static="no" mutable="no">
+        <type>boost::thread</type>
+        <definition>boost::thread audio_transport::RosGstCapture::_gst_thread</definition>
+        <argsstring></argsstring>
+        <name>_gst_thread</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" line="200" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaudio__transport_1_1_ros_gst_capture_1abd43742b4f37a55a6b08e9dcce24a4cf" prot="private" static="no" mutable="no">
+        <type>GstElement *</type>
+        <definition>GstElement* audio_transport::RosGstCapture::_pipeline</definition>
+        <argsstring></argsstring>
+        <name>_pipeline</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" line="202" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaudio__transport_1_1_ros_gst_capture_1a8c41a7c2760e8b7a77e51fa860b40ad5" prot="private" static="no" mutable="no">
+        <type>GstElement *</type>
+        <definition>GstElement * audio_transport::RosGstCapture::_source</definition>
+        <argsstring></argsstring>
+        <name>_source</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" line="202" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaudio__transport_1_1_ros_gst_capture_1a06f776c83d26d05ad93e925897ec5861" prot="private" static="no" mutable="no">
+        <type>GstElement *</type>
+        <definition>GstElement * audio_transport::RosGstCapture::_filter</definition>
+        <argsstring></argsstring>
+        <name>_filter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" line="202" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaudio__transport_1_1_ros_gst_capture_1ad7541e7c6b834bd00cc8d284b6489772" prot="private" static="no" mutable="no">
+        <type>GstElement *</type>
+        <definition>GstElement * audio_transport::RosGstCapture::_sink</definition>
+        <argsstring></argsstring>
+        <name>_sink</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" line="202" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaudio__transport_1_1_ros_gst_capture_1a157888d10cc92106f5c534514376f9bb" prot="private" static="no" mutable="no">
+        <type>GstElement *</type>
+        <definition>GstElement * audio_transport::RosGstCapture::_convert</definition>
+        <argsstring></argsstring>
+        <name>_convert</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" line="202" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaudio__transport_1_1_ros_gst_capture_1a42fa67dfb6864166bc974a9a9c5a10f4" prot="private" static="no" mutable="no">
+        <type>GstElement *</type>
+        <definition>GstElement * audio_transport::RosGstCapture::_encode</definition>
+        <argsstring></argsstring>
+        <name>_encode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" line="202" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaudio__transport_1_1_ros_gst_capture_1ad05c53d9ee98daa79feced6229a5390b" prot="private" static="no" mutable="no">
+        <type>GstBus *</type>
+        <definition>GstBus* audio_transport::RosGstCapture::_bus</definition>
+        <argsstring></argsstring>
+        <name>_bus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" line="203" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaudio__transport_1_1_ros_gst_capture_1a9b7fa4219bfd264a9edcb4fd0b79a54f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int audio_transport::RosGstCapture::_bitrate</definition>
+        <argsstring></argsstring>
+        <name>_bitrate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" line="204" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaudio__transport_1_1_ros_gst_capture_1a02fe182d42188796a8c3a6277ee8152b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int audio_transport::RosGstCapture::_channels</definition>
+        <argsstring></argsstring>
+        <name>_channels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" line="204" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaudio__transport_1_1_ros_gst_capture_1a83d2509d92b5229f199a4e0164f94112" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int audio_transport::RosGstCapture::_depth</definition>
+        <argsstring></argsstring>
+        <name>_depth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" line="204" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaudio__transport_1_1_ros_gst_capture_1ae6ea1e3d5421a6b5bf5ca1b0177195c3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int audio_transport::RosGstCapture::_sample_rate</definition>
+        <argsstring></argsstring>
+        <name>_sample_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" line="204" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaudio__transport_1_1_ros_gst_capture_1aef2dd25676c822f6c6e8396e2a8e0438" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string audio_transport::RosGstCapture::_topic</definition>
+        <argsstring></argsstring>
+        <name>_topic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" line="205" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaudio__transport_1_1_ros_gst_capture_1a91357fe56b411d7650fb12fea184b665" prot="private" static="no" mutable="no">
+        <type>GMainLoop *</type>
+        <definition>GMainLoop* audio_transport::RosGstCapture::_loop</definition>
+        <argsstring></argsstring>
+        <name>_loop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" line="206" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classaudio__transport_1_1_ros_gst_capture_1a3306788f53569c9116b957d702b3d9be" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string audio_transport::RosGstCapture::_format</definition>
+        <argsstring></argsstring>
+        <name>_format</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" line="207" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classaudio__transport_1_1_ros_gst_capture_1a48ec4cd3c826696140c66a5a58042cc7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>audio_transport::RosGstCapture::RosGstCapture</definition>
+        <argsstring>()</argsstring>
+        <name>RosGstCapture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" line="15" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" bodystart="15" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classaudio__transport_1_1_ros_gst_capture_1ab4d4dcb6d771312c3744e96729579709" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>audio_transport::RosGstCapture::~RosGstCapture</definition>
+        <argsstring>()</argsstring>
+        <name>~RosGstCapture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" line="142" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" bodystart="142" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classaudio__transport_1_1_ros_gst_capture_1a8b3195d7f2bb39af1a05323af7e41178" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void audio_transport::RosGstCapture::exitOnMainThread</definition>
+        <argsstring>(int code)</argsstring>
+        <name>exitOnMainThread</name>
+        <param>
+          <type>int</type>
+          <declname>code</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" line="150" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" bodystart="150" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classaudio__transport_1_1_ros_gst_capture_1a612397b4a6bac075406372b10e565874" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void audio_transport::RosGstCapture::publish</definition>
+        <argsstring>(const roboy_communication_cognition::AudioData &amp;msg)</argsstring>
+        <name>publish</name>
+        <param>
+          <type>const roboy_communication_cognition::AudioData &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" line="155" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" bodystart="155" bodyend="158"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classaudio__transport_1_1_ros_gst_capture_1adaa0ea2e1c35f56e8694700268e45fb4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>GstFlowReturn</type>
+        <definition>static GstFlowReturn audio_transport::RosGstCapture::onNewBuffer</definition>
+        <argsstring>(GstAppSink *appsink, gpointer userData)</argsstring>
+        <name>onNewBuffer</name>
+        <param>
+          <type>GstAppSink *</type>
+          <declname>appsink</declname>
+        </param>
+        <param>
+          <type>gpointer</type>
+          <declname>userData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" line="160" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" bodystart="160" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="classaudio__transport_1_1_ros_gst_capture_1a3486f56eb77ccee094f0d186fb348dd3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>gboolean</type>
+        <definition>static gboolean audio_transport::RosGstCapture::onMessage</definition>
+        <argsstring>(GstBus *bus, GstMessage *message, gpointer userData)</argsstring>
+        <name>onMessage</name>
+        <param>
+          <type>GstBus *</type>
+          <declname>bus</declname>
+        </param>
+        <param>
+          <type>GstMessage *</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>gpointer</type>
+          <declname>userData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" line="181" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" bodystart="181" bodyend="194"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" line="13" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/audio_capture.cpp" bodystart="12" bodyend="208"/>
+    <listofallmembers>
+      <member refid="classaudio__transport_1_1_ros_gst_capture_1a9b7fa4219bfd264a9edcb4fd0b79a54f" prot="private" virt="non-virtual"><scope>audio_transport::RosGstCapture</scope><name>_bitrate</name></member>
+      <member refid="classaudio__transport_1_1_ros_gst_capture_1ad05c53d9ee98daa79feced6229a5390b" prot="private" virt="non-virtual"><scope>audio_transport::RosGstCapture</scope><name>_bus</name></member>
+      <member refid="classaudio__transport_1_1_ros_gst_capture_1a02fe182d42188796a8c3a6277ee8152b" prot="private" virt="non-virtual"><scope>audio_transport::RosGstCapture</scope><name>_channels</name></member>
+      <member refid="classaudio__transport_1_1_ros_gst_capture_1a157888d10cc92106f5c534514376f9bb" prot="private" virt="non-virtual"><scope>audio_transport::RosGstCapture</scope><name>_convert</name></member>
+      <member refid="classaudio__transport_1_1_ros_gst_capture_1a83d2509d92b5229f199a4e0164f94112" prot="private" virt="non-virtual"><scope>audio_transport::RosGstCapture</scope><name>_depth</name></member>
+      <member refid="classaudio__transport_1_1_ros_gst_capture_1a42fa67dfb6864166bc974a9a9c5a10f4" prot="private" virt="non-virtual"><scope>audio_transport::RosGstCapture</scope><name>_encode</name></member>
+      <member refid="classaudio__transport_1_1_ros_gst_capture_1a06f776c83d26d05ad93e925897ec5861" prot="private" virt="non-virtual"><scope>audio_transport::RosGstCapture</scope><name>_filter</name></member>
+      <member refid="classaudio__transport_1_1_ros_gst_capture_1a3306788f53569c9116b957d702b3d9be" prot="private" virt="non-virtual"><scope>audio_transport::RosGstCapture</scope><name>_format</name></member>
+      <member refid="classaudio__transport_1_1_ros_gst_capture_1a3b89e4b70e6bf25706ca1d76ec33610f" prot="private" virt="non-virtual"><scope>audio_transport::RosGstCapture</scope><name>_gst_thread</name></member>
+      <member refid="classaudio__transport_1_1_ros_gst_capture_1a91357fe56b411d7650fb12fea184b665" prot="private" virt="non-virtual"><scope>audio_transport::RosGstCapture</scope><name>_loop</name></member>
+      <member refid="classaudio__transport_1_1_ros_gst_capture_1a93f6c8fd41cabb0616f2f7bd18ec5c59" prot="private" virt="non-virtual"><scope>audio_transport::RosGstCapture</scope><name>_nh</name></member>
+      <member refid="classaudio__transport_1_1_ros_gst_capture_1abd43742b4f37a55a6b08e9dcce24a4cf" prot="private" virt="non-virtual"><scope>audio_transport::RosGstCapture</scope><name>_pipeline</name></member>
+      <member refid="classaudio__transport_1_1_ros_gst_capture_1a0d620309054a6ae1ddf72f356b2f3012" prot="private" virt="non-virtual"><scope>audio_transport::RosGstCapture</scope><name>_pub</name></member>
+      <member refid="classaudio__transport_1_1_ros_gst_capture_1ae6ea1e3d5421a6b5bf5ca1b0177195c3" prot="private" virt="non-virtual"><scope>audio_transport::RosGstCapture</scope><name>_sample_rate</name></member>
+      <member refid="classaudio__transport_1_1_ros_gst_capture_1ad7541e7c6b834bd00cc8d284b6489772" prot="private" virt="non-virtual"><scope>audio_transport::RosGstCapture</scope><name>_sink</name></member>
+      <member refid="classaudio__transport_1_1_ros_gst_capture_1a8c41a7c2760e8b7a77e51fa860b40ad5" prot="private" virt="non-virtual"><scope>audio_transport::RosGstCapture</scope><name>_source</name></member>
+      <member refid="classaudio__transport_1_1_ros_gst_capture_1aef2dd25676c822f6c6e8396e2a8e0438" prot="private" virt="non-virtual"><scope>audio_transport::RosGstCapture</scope><name>_topic</name></member>
+      <member refid="classaudio__transport_1_1_ros_gst_capture_1a8b3195d7f2bb39af1a05323af7e41178" prot="public" virt="non-virtual"><scope>audio_transport::RosGstCapture</scope><name>exitOnMainThread</name></member>
+      <member refid="classaudio__transport_1_1_ros_gst_capture_1a3486f56eb77ccee094f0d186fb348dd3" prot="public" virt="non-virtual"><scope>audio_transport::RosGstCapture</scope><name>onMessage</name></member>
+      <member refid="classaudio__transport_1_1_ros_gst_capture_1adaa0ea2e1c35f56e8694700268e45fb4" prot="public" virt="non-virtual"><scope>audio_transport::RosGstCapture</scope><name>onNewBuffer</name></member>
+      <member refid="classaudio__transport_1_1_ros_gst_capture_1a612397b4a6bac075406372b10e565874" prot="public" virt="non-virtual"><scope>audio_transport::RosGstCapture</scope><name>publish</name></member>
+      <member refid="classaudio__transport_1_1_ros_gst_capture_1a48ec4cd3c826696140c66a5a58042cc7" prot="public" virt="non-virtual"><scope>audio_transport::RosGstCapture</scope><name>RosGstCapture</name></member>
+      <member refid="classaudio__transport_1_1_ros_gst_capture_1ab4d4dcb6d771312c3744e96729579709" prot="public" virt="non-virtual"><scope>audio_transport::RosGstCapture</scope><name>~RosGstCapture</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

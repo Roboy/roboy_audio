@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_e61185094ee38072c47abc92f8244005" kind="dir">
+    <compoundname>/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src</compoundname>
+    <innerfile refid="audio__capture_8cpp">audio_capture.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src/"/>
+  </compounddef>
+</doxygen>

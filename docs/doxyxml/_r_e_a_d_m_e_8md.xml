@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Roboy<sp/>Audio</highlight></codeline>
+<codeline><highlight class="normal">[![Documentation<sp/>Status](https://readthedocs.org/projects/roboy-audio/badge/?version=doxy_setup)](http://roboy-audio.readthedocs.io/en/doxy_setup/)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>What<sp/>is<sp/>it?</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>repository<sp/>contains<sp/>the<sp/>audio<sp/>related<sp/>skills<sp/>for<sp/>the<sp/>humanoid<sp/>robot<sp/>Roboy<sp/>(roboy.org).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>How<sp/>does<sp/>it<sp/>work?</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">It<sp/>procecess<sp/>the<sp/>microphone<sp/>data<sp/>from<sp/>Matrix<sp/>Creator<sp/>(www.matrix.one)<sp/>in<sp/>two<sp/>different<sp/>ways.<sp/>It<sp/>wether<sp/>reads<sp/>the<sp/>data<sp/>directly<sp/>out<sp/>of<sp/>the<sp/>board<sp/>related<sp/>FPGA<sp/>and<sp/>processes<sp/>it.<sp/>Or<sp/>it<sp/>streams<sp/>the<sp/>data<sp/>onto<sp/>a<sp/>ROS<sp/>topic,<sp/>from<sp/>which<sp/>on<sp/>other<sp/>modules<sp/>can<sp/>submit<sp/>to<sp/>this<sp/>topic<sp/>and<sp/>process<sp/>it<sp/>further.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Most<sp/>of<sp/>the<sp/>things<sp/>(direct<sp/>processing,<sp/>streaming)<sp/>run<sp/>in<sp/>C++.<sp/>But<sp/>there<sp/>is<sp/>also<sp/>a<sp/>template<sp/>for<sp/>receiving<sp/>the<sp/>stream<sp/>in<sp/>Python.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>How<sp/>to<sp/>run<sp/>it?</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Will<sp/>be<sp/>defined<sp/>in<sp/>the<sp/>future.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>How<sp/>to<sp/>extend<sp/>it?</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Write<sp/>cool<sp/>stuff<sp/>and<sp/>add<sp/>it<sp/>to<sp/>the<sp/>repo.</highlight></codeline>
+    </programlisting>
+    <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/README.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_f2deacb5f7a1a2eaba36d752699f50e6" kind="dir">
+    <compoundname>/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/src</compoundname>
+    <innerfile refid="cross__correlation_8cpp">cross_correlation.cpp</innerfile>
+    <innerfile refid="direction__of__arrival_8cpp">direction_of_arrival.cpp</innerfile>
+    <innerfile refid="direction__of__arrival__demo_8cpp">direction_of_arrival_demo.cpp</innerfile>
+    <innerfile refid="everloop_8cpp">everloop.cpp</innerfile>
+    <innerfile refid="matrix__driver_8cpp">matrix_driver.cpp</innerfile>
+    <innerfile refid="microphone__array_8cpp">microphone_array.cpp</innerfile>
+    <innerfile refid="wishbone__bus_8cpp">wishbone_bus.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/src/"/>
+  </compounddef>
+</doxygen>

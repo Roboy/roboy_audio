@@ -1,0 +1,268 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classmatrix__hal_1_1_cross_correlation" kind="class" language="C++" prot="public">
+    <compoundname>matrix_hal::CrossCorrelation</compoundname>
+    <includes refid="cross__correlation_8h" local="no">cross_correlation.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmatrix__hal_1_1_cross_correlation_1a1624a2ff1aef048491c93b862a856e96" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int matrix_hal::CrossCorrelation::order_</definition>
+        <argsstring></argsstring>
+        <name>order_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/cross_correlation.h" line="43" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/cross_correlation.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmatrix__hal_1_1_cross_correlation_1a2f0afd6e005b267e1fe06c9d13c23a6c" prot="private" static="no" mutable="no">
+        <type>float *</type>
+        <definition>float* matrix_hal::CrossCorrelation::in_</definition>
+        <argsstring></argsstring>
+        <name>in_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/cross_correlation.h" line="44" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/cross_correlation.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmatrix__hal_1_1_cross_correlation_1af8d45d5df787943333be1555ac0675f3" prot="private" static="no" mutable="no">
+        <type>float *</type>
+        <definition>float* matrix_hal::CrossCorrelation::A_</definition>
+        <argsstring></argsstring>
+        <name>A_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/cross_correlation.h" line="45" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/cross_correlation.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmatrix__hal_1_1_cross_correlation_1a022d4ba42cefaf82e79bb76248e939e7" prot="private" static="no" mutable="no">
+        <type>float *</type>
+        <definition>float* matrix_hal::CrossCorrelation::B_</definition>
+        <argsstring></argsstring>
+        <name>B_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/cross_correlation.h" line="46" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/cross_correlation.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmatrix__hal_1_1_cross_correlation_1ab0ff7cc05baa15f08235219f5f329bed" prot="private" static="no" mutable="no">
+        <type>float *</type>
+        <definition>float* matrix_hal::CrossCorrelation::C_</definition>
+        <argsstring></argsstring>
+        <name>C_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/cross_correlation.h" line="47" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/cross_correlation.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmatrix__hal_1_1_cross_correlation_1a1945af2ae0f0081038c925e8e1736acc" prot="private" static="no" mutable="no">
+        <type>float *</type>
+        <definition>float* matrix_hal::CrossCorrelation::c_</definition>
+        <argsstring></argsstring>
+        <name>c_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/cross_correlation.h" line="48" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/cross_correlation.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmatrix__hal_1_1_cross_correlation_1a092ef9b77bf7b3f29384a65057008da3" prot="private" static="no" mutable="no">
+        <type>fftwf_plan</type>
+        <definition>fftwf_plan matrix_hal::CrossCorrelation::forward_plan_a_</definition>
+        <argsstring></argsstring>
+        <name>forward_plan_a_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/cross_correlation.h" line="50" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/cross_correlation.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmatrix__hal_1_1_cross_correlation_1afa34b81b62e4cfc586e3b11cef48188c" prot="private" static="no" mutable="no">
+        <type>fftwf_plan</type>
+        <definition>fftwf_plan matrix_hal::CrossCorrelation::forward_plan_b_</definition>
+        <argsstring></argsstring>
+        <name>forward_plan_b_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/cross_correlation.h" line="51" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/cross_correlation.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmatrix__hal_1_1_cross_correlation_1ae5cbf33997ba21ee1f5f6c52eabbaa5d" prot="private" static="no" mutable="no">
+        <type>fftwf_plan</type>
+        <definition>fftwf_plan matrix_hal::CrossCorrelation::inverse_plan_</definition>
+        <argsstring></argsstring>
+        <name>inverse_plan_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/cross_correlation.h" line="52" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/cross_correlation.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmatrix__hal_1_1_cross_correlation_1a4bcbc6a9a03d198e099d76a321c3a628" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>matrix_hal::CrossCorrelation::CrossCorrelation</definition>
+        <argsstring>()</argsstring>
+        <name>CrossCorrelation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/cross_correlation.h" line="33" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/src/cross_correlation.cpp" bodystart="23" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classmatrix__hal_1_1_cross_correlation_1a6cab065262539a5d6aeaecf56719663b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>matrix_hal::CrossCorrelation::~CrossCorrelation</definition>
+        <argsstring>()</argsstring>
+        <name>~CrossCorrelation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/cross_correlation.h" line="34" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/src/cross_correlation.cpp" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classmatrix__hal_1_1_cross_correlation_1aa13ac4d05d26abd2c69584bd87e3a8de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool matrix_hal::CrossCorrelation::Init</definition>
+        <argsstring>(int N)</argsstring>
+        <name>Init</name>
+        <param>
+          <type>int</type>
+          <declname>N</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/cross_correlation.h" line="35" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/src/cross_correlation.cpp" bodystart="48" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classmatrix__hal_1_1_cross_correlation_1ac7b6503eb57ed13a905391aab3b30875" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void matrix_hal::CrossCorrelation::Release</definition>
+        <argsstring>()</argsstring>
+        <name>Release</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/cross_correlation.h" line="36" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/src/cross_correlation.cpp" bodystart="36" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classmatrix__hal_1_1_cross_correlation_1add3faa3ef6b05446904fea4cf6d2e872" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void matrix_hal::CrossCorrelation::Exec</definition>
+        <argsstring>(int16_t *a, int16_t *b)</argsstring>
+        <name>Exec</name>
+        <param>
+          <type>int16_t *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int16_t *</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/cross_correlation.h" line="37" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/src/cross_correlation.cpp" bodystart="86" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classmatrix__hal_1_1_cross_correlation_1a8b5eb55bd61bfc64754caba62eb4d574" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float *</type>
+        <definition>float * matrix_hal::CrossCorrelation::Result</definition>
+        <argsstring>()</argsstring>
+        <name>Result</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/cross_correlation.h" line="38" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/src/cross_correlation.cpp" bodystart="84" bodyend="84"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmatrix__hal_1_1_cross_correlation_1a095bf60afe4e62bda83dac2dcaa31a48" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void matrix_hal::CrossCorrelation::Corr</definition>
+        <argsstring>(float *out, float *x, float *y)</argsstring>
+        <name>Corr</name>
+        <param>
+          <type>float *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/cross_correlation.h" line="41" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/src/cross_correlation.cpp" bodystart="108" bodyend="122"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The cross-correlation class. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class implements Cross-correlation between signals in frequency domain. </para>    </detaileddescription>
+    <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/cross_correlation.h" line="31" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/cross_correlation.h" bodystart="31" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classmatrix__hal_1_1_cross_correlation_1af8d45d5df787943333be1555ac0675f3" prot="private" virt="non-virtual"><scope>matrix_hal::CrossCorrelation</scope><name>A_</name></member>
+      <member refid="classmatrix__hal_1_1_cross_correlation_1a022d4ba42cefaf82e79bb76248e939e7" prot="private" virt="non-virtual"><scope>matrix_hal::CrossCorrelation</scope><name>B_</name></member>
+      <member refid="classmatrix__hal_1_1_cross_correlation_1ab0ff7cc05baa15f08235219f5f329bed" prot="private" virt="non-virtual"><scope>matrix_hal::CrossCorrelation</scope><name>C_</name></member>
+      <member refid="classmatrix__hal_1_1_cross_correlation_1a1945af2ae0f0081038c925e8e1736acc" prot="private" virt="non-virtual"><scope>matrix_hal::CrossCorrelation</scope><name>c_</name></member>
+      <member refid="classmatrix__hal_1_1_cross_correlation_1a095bf60afe4e62bda83dac2dcaa31a48" prot="private" virt="non-virtual"><scope>matrix_hal::CrossCorrelation</scope><name>Corr</name></member>
+      <member refid="classmatrix__hal_1_1_cross_correlation_1a4bcbc6a9a03d198e099d76a321c3a628" prot="public" virt="non-virtual"><scope>matrix_hal::CrossCorrelation</scope><name>CrossCorrelation</name></member>
+      <member refid="classmatrix__hal_1_1_cross_correlation_1add3faa3ef6b05446904fea4cf6d2e872" prot="public" virt="non-virtual"><scope>matrix_hal::CrossCorrelation</scope><name>Exec</name></member>
+      <member refid="classmatrix__hal_1_1_cross_correlation_1a092ef9b77bf7b3f29384a65057008da3" prot="private" virt="non-virtual"><scope>matrix_hal::CrossCorrelation</scope><name>forward_plan_a_</name></member>
+      <member refid="classmatrix__hal_1_1_cross_correlation_1afa34b81b62e4cfc586e3b11cef48188c" prot="private" virt="non-virtual"><scope>matrix_hal::CrossCorrelation</scope><name>forward_plan_b_</name></member>
+      <member refid="classmatrix__hal_1_1_cross_correlation_1a2f0afd6e005b267e1fe06c9d13c23a6c" prot="private" virt="non-virtual"><scope>matrix_hal::CrossCorrelation</scope><name>in_</name></member>
+      <member refid="classmatrix__hal_1_1_cross_correlation_1aa13ac4d05d26abd2c69584bd87e3a8de" prot="public" virt="non-virtual"><scope>matrix_hal::CrossCorrelation</scope><name>Init</name></member>
+      <member refid="classmatrix__hal_1_1_cross_correlation_1ae5cbf33997ba21ee1f5f6c52eabbaa5d" prot="private" virt="non-virtual"><scope>matrix_hal::CrossCorrelation</scope><name>inverse_plan_</name></member>
+      <member refid="classmatrix__hal_1_1_cross_correlation_1a1624a2ff1aef048491c93b862a856e96" prot="private" virt="non-virtual"><scope>matrix_hal::CrossCorrelation</scope><name>order_</name></member>
+      <member refid="classmatrix__hal_1_1_cross_correlation_1ac7b6503eb57ed13a905391aab3b30875" prot="public" virt="non-virtual"><scope>matrix_hal::CrossCorrelation</scope><name>Release</name></member>
+      <member refid="classmatrix__hal_1_1_cross_correlation_1a8b5eb55bd61bfc64754caba62eb4d574" prot="public" virt="non-virtual"><scope>matrix_hal::CrossCorrelation</scope><name>Result</name></member>
+      <member refid="classmatrix__hal_1_1_cross_correlation_1a6cab065262539a5d6aeaecf56719663b" prot="public" virt="non-virtual"><scope>matrix_hal::CrossCorrelation</scope><name>~CrossCorrelation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

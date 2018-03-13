@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_99bb8d3e72753c9dd17f053be67fa1a4" kind="dir">
+    <compoundname>/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream</compoundname>
+    <innerdir refid="dir_87bd9fe9dcd9db5c1963e08f8b923906">/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/scripts</innerdir>
+    <innerdir refid="dir_e61185094ee38072c47abc92f8244005">/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_94042d2a4cc2200a042f0dbbab010fb2" kind="dir">
+    <compoundname>/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include</compoundname>
+    <innerfile refid="circular__queue_8h">circular_queue.h</innerfile>
+    <innerfile refid="creator__memory__map_8h">creator_memory_map.h</innerfile>
+    <innerfile refid="cross__correlation_8h">cross_correlation.h</innerfile>
+    <innerfile refid="direction__of__arrival_8h">direction_of_arrival.h</innerfile>
+    <innerfile refid="everloop_8h">everloop.h</innerfile>
+    <innerfile refid="everloop__image_8h">everloop_image.h</innerfile>
+    <innerfile refid="imu__data_8h">imu_data.h</innerfile>
+    <innerfile refid="matrix__driver_8h">matrix_driver.h</innerfile>
+    <innerfile refid="microphone__array_8h">microphone_array.h</innerfile>
+    <innerfile refid="microphone__array__location_8h">microphone_array_location.h</innerfile>
+    <innerfile refid="pressure__data_8h">pressure_data.h</innerfile>
+    <innerfile refid="wishbone__bus_8h">wishbone_bus.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/"/>
+  </compounddef>
+</doxygen>

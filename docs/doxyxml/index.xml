@@ -1,0 +1,297 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
+  <compound refid="classmatrix__hal_1_1_circular_queue" kind="class"><name>matrix_hal::CircularQueue</name>
+    <member refid="classmatrix__hal_1_1_circular_queue_1a50c024e4ee8c22a1a36c17f7fe40ba72" kind="variable"><name>fifo_size_</name></member>
+    <member refid="classmatrix__hal_1_1_circular_queue_1a5a6cdcc9479911669f7002862c244fe1" kind="variable"><name>pointer_</name></member>
+    <member refid="classmatrix__hal_1_1_circular_queue_1aa31a4478328e59964beef388b6a8bcf9" kind="variable"><name>fifo_</name></member>
+    <member refid="classmatrix__hal_1_1_circular_queue_1af0005c5da4aec105d2a239dbac6c5475" kind="function"><name>CircularQueue</name></member>
+    <member refid="classmatrix__hal_1_1_circular_queue_1ae58366cd971636f983f96daa2533983c" kind="function"><name>~CircularQueue</name></member>
+    <member refid="classmatrix__hal_1_1_circular_queue_1ae83215b54cfa7dcea4dcca03aef72f90" kind="function"><name>Resize</name></member>
+    <member refid="classmatrix__hal_1_1_circular_queue_1ad888317469cefe4e9b933eb09d750df6" kind="function"><name>PushPop</name></member>
+  </compound>
+  <compound refid="classmatrix__hal_1_1_cross_correlation" kind="class"><name>matrix_hal::CrossCorrelation</name>
+    <member refid="classmatrix__hal_1_1_cross_correlation_1a1624a2ff1aef048491c93b862a856e96" kind="variable"><name>order_</name></member>
+    <member refid="classmatrix__hal_1_1_cross_correlation_1a2f0afd6e005b267e1fe06c9d13c23a6c" kind="variable"><name>in_</name></member>
+    <member refid="classmatrix__hal_1_1_cross_correlation_1af8d45d5df787943333be1555ac0675f3" kind="variable"><name>A_</name></member>
+    <member refid="classmatrix__hal_1_1_cross_correlation_1a022d4ba42cefaf82e79bb76248e939e7" kind="variable"><name>B_</name></member>
+    <member refid="classmatrix__hal_1_1_cross_correlation_1ab0ff7cc05baa15f08235219f5f329bed" kind="variable"><name>C_</name></member>
+    <member refid="classmatrix__hal_1_1_cross_correlation_1a1945af2ae0f0081038c925e8e1736acc" kind="variable"><name>c_</name></member>
+    <member refid="classmatrix__hal_1_1_cross_correlation_1a092ef9b77bf7b3f29384a65057008da3" kind="variable"><name>forward_plan_a_</name></member>
+    <member refid="classmatrix__hal_1_1_cross_correlation_1afa34b81b62e4cfc586e3b11cef48188c" kind="variable"><name>forward_plan_b_</name></member>
+    <member refid="classmatrix__hal_1_1_cross_correlation_1ae5cbf33997ba21ee1f5f6c52eabbaa5d" kind="variable"><name>inverse_plan_</name></member>
+    <member refid="classmatrix__hal_1_1_cross_correlation_1a4bcbc6a9a03d198e099d76a321c3a628" kind="function"><name>CrossCorrelation</name></member>
+    <member refid="classmatrix__hal_1_1_cross_correlation_1a6cab065262539a5d6aeaecf56719663b" kind="function"><name>~CrossCorrelation</name></member>
+    <member refid="classmatrix__hal_1_1_cross_correlation_1aa13ac4d05d26abd2c69584bd87e3a8de" kind="function"><name>Init</name></member>
+    <member refid="classmatrix__hal_1_1_cross_correlation_1ac7b6503eb57ed13a905391aab3b30875" kind="function"><name>Release</name></member>
+    <member refid="classmatrix__hal_1_1_cross_correlation_1add3faa3ef6b05446904fea4cf6d2e872" kind="function"><name>Exec</name></member>
+    <member refid="classmatrix__hal_1_1_cross_correlation_1a8b5eb55bd61bfc64754caba62eb4d574" kind="function"><name>Result</name></member>
+    <member refid="classmatrix__hal_1_1_cross_correlation_1a095bf60afe4e62bda83dac2dcaa31a48" kind="function"><name>Corr</name></member>
+  </compound>
+  <compound refid="classmatrix__hal_1_1_direction_of_arrival" kind="class"><name>matrix_hal::DirectionOfArrival</name>
+    <member refid="classmatrix__hal_1_1_direction_of_arrival_1a89dfdb3010ad01b0aaf353c3c55729fc" kind="variable"><name>mics_</name></member>
+    <member refid="classmatrix__hal_1_1_direction_of_arrival_1a5140031fb7a180edcccc56c0d739ff05" kind="variable"><name>length_</name></member>
+    <member refid="classmatrix__hal_1_1_direction_of_arrival_1a9346e84e1b8371e6c49d008c1777b677" kind="variable"><name>corr_</name></member>
+    <member refid="classmatrix__hal_1_1_direction_of_arrival_1abce7e971730debee6213c18aee9eb17d" kind="variable"><name>current_mag_</name></member>
+    <member refid="classmatrix__hal_1_1_direction_of_arrival_1abc4b8836e6531f4ca26f626e331221b4" kind="variable"><name>current_index_</name></member>
+    <member refid="classmatrix__hal_1_1_direction_of_arrival_1a8c27c8998921ec03311862409a87a93d" kind="variable"><name>buffer_1D_</name></member>
+    <member refid="classmatrix__hal_1_1_direction_of_arrival_1abc20dc3c4490e49cc6ca0366ee97b101" kind="variable"><name>buffer_2D_</name></member>
+    <member refid="classmatrix__hal_1_1_direction_of_arrival_1af188677703161f2198cf52dbfb8254b4" kind="variable"><name>mic_direction_</name></member>
+    <member refid="classmatrix__hal_1_1_direction_of_arrival_1a370f9532935f0352cdeacd9a1a1351e5" kind="variable"><name>azimutal_angle_</name></member>
+    <member refid="classmatrix__hal_1_1_direction_of_arrival_1a56b06d6ee83974751511099ea7ce2a85" kind="variable"><name>polar_angle_</name></member>
+    <member refid="classmatrix__hal_1_1_direction_of_arrival_1ac91c7cd8135e1bbd70223bff68c45388" kind="function"><name>DirectionOfArrival</name></member>
+    <member refid="classmatrix__hal_1_1_direction_of_arrival_1aac0cd1ce7bb5e709593b7f02421a99de" kind="function"><name>Init</name></member>
+    <member refid="classmatrix__hal_1_1_direction_of_arrival_1a64030cee7e532197e2f0013805b19645" kind="function"><name>Calculate</name></member>
+    <member refid="classmatrix__hal_1_1_direction_of_arrival_1a702abcd02d3bbfd2870c304e90d10109" kind="function"><name>GetAzimutalAngle</name></member>
+    <member refid="classmatrix__hal_1_1_direction_of_arrival_1a3049d2971fb2a828d00bf1136a86e050" kind="function"><name>GetPolarAngle</name></member>
+    <member refid="classmatrix__hal_1_1_direction_of_arrival_1a6e8502f9c157d0a674fd2369f76eed91" kind="function"><name>GetNearestMicrophone</name></member>
+    <member refid="classmatrix__hal_1_1_direction_of_arrival_1aebfd3159f2f2d5828cdffa33e864ee15" kind="function"><name>getAbsDiff</name></member>
+  </compound>
+  <compound refid="classmatrix__hal_1_1_everloop" kind="class"><name>matrix_hal::Everloop</name>
+    <member refid="classmatrix__hal_1_1_everloop_1aa392c536d682354373232be5276bae00" kind="function"><name>Everloop</name></member>
+    <member refid="classmatrix__hal_1_1_everloop_1a275fbc93b7843c161e51194d544e9714" kind="function"><name>Write</name></member>
+  </compound>
+  <compound refid="classmatrix__hal_1_1_everloop_image" kind="class"><name>matrix_hal::EverloopImage</name>
+    <member refid="classmatrix__hal_1_1_everloop_image_1a75f3f6f844e30d40deac02eed8017f1a" kind="variable"><name>leds</name></member>
+    <member refid="classmatrix__hal_1_1_everloop_image_1a11da7b081dccd4c6377a4930694814a4" kind="function"><name>EverloopImage</name></member>
+  </compound>
+  <compound refid="structmatrix__hal_1_1hardware__address" kind="struct"><name>matrix_hal::hardware_address</name>
+    <member refid="structmatrix__hal_1_1hardware__address_1a42b2a630cb72359a3d2716f31b99f0fd" kind="variable"><name>readnwrite</name></member>
+    <member refid="structmatrix__hal_1_1hardware__address_1a852b3af50d38c03a4c6eab5fbeaad0b6" kind="variable"><name>burst</name></member>
+    <member refid="structmatrix__hal_1_1hardware__address_1a584e9459731d968d0f4fd8394d72b9e7" kind="variable"><name>reg</name></member>
+  </compound>
+  <compound refid="classmatrix__hal_1_1_i_m_u_data" kind="class"><name>matrix_hal::IMUData</name>
+    <member refid="classmatrix__hal_1_1_i_m_u_data_1a1bc754575af98332134316655f9f2bf5" kind="variable"><name>yaw</name></member>
+    <member refid="classmatrix__hal_1_1_i_m_u_data_1abec037acf6823d12284be3e63abc2125" kind="variable"><name>pitch</name></member>
+    <member refid="classmatrix__hal_1_1_i_m_u_data_1a5aec6a066a2ecb62428f17fa775dca28" kind="variable"><name>roll</name></member>
+    <member refid="classmatrix__hal_1_1_i_m_u_data_1aff7908c23f806165b4d9cd1cc82a7c92" kind="variable"><name>accel_x</name></member>
+    <member refid="classmatrix__hal_1_1_i_m_u_data_1aacfc4560951d826444da68848c9dcea9" kind="variable"><name>accel_y</name></member>
+    <member refid="classmatrix__hal_1_1_i_m_u_data_1a039582e7a925a2abe81f793852a11ea7" kind="variable"><name>accel_z</name></member>
+    <member refid="classmatrix__hal_1_1_i_m_u_data_1a97a76f3f70599442057960358a541da4" kind="variable"><name>gyro_x</name></member>
+    <member refid="classmatrix__hal_1_1_i_m_u_data_1a19dfb3c8f1e6a72f7bd974466e6ea0ee" kind="variable"><name>gyro_y</name></member>
+    <member refid="classmatrix__hal_1_1_i_m_u_data_1ade8dc63497f880de8393aa59f4907b0a" kind="variable"><name>gyro_z</name></member>
+    <member refid="classmatrix__hal_1_1_i_m_u_data_1ab76d86d8c0812f35cf389557be2ca117" kind="variable"><name>mag_x</name></member>
+    <member refid="classmatrix__hal_1_1_i_m_u_data_1af0351f711ac51e9d3d039a70e86a51cb" kind="variable"><name>mag_y</name></member>
+    <member refid="classmatrix__hal_1_1_i_m_u_data_1a7b9fec34bdc07d7cbc678e9b105bc880" kind="variable"><name>mag_z</name></member>
+  </compound>
+  <compound refid="classmatrix__hal_1_1_led_value" kind="class"><name>matrix_hal::LedValue</name>
+    <member refid="classmatrix__hal_1_1_led_value_1ac6471006e6b3a7c46b1b0001199c7d32" kind="variable"><name>red</name></member>
+    <member refid="classmatrix__hal_1_1_led_value_1ac7dc1f94df5c9990cc2cf7101e61291e" kind="variable"><name>green</name></member>
+    <member refid="classmatrix__hal_1_1_led_value_1a070508083c3a6e99c9680bdd7fa7dba7" kind="variable"><name>blue</name></member>
+    <member refid="classmatrix__hal_1_1_led_value_1a5b5a93075c533ddcae91a671c8ee5853" kind="variable"><name>white</name></member>
+    <member refid="classmatrix__hal_1_1_led_value_1ae11afdd48681be9cb5cd6d731c12a12b" kind="function"><name>LedValue</name></member>
+  </compound>
+  <compound refid="classmatrix__hal_1_1_matrix_driver" kind="class"><name>matrix_hal::MatrixDriver</name>
+    <member refid="classmatrix__hal_1_1_matrix_driver_1a5c4fbeb8c4885782ff1f7a910f19e5bf" kind="variable"><name>wishbone_</name></member>
+    <member refid="classmatrix__hal_1_1_matrix_driver_1a7c7d6d65b485ed3326b46d32c38fd47b" kind="function"><name>Setup</name></member>
+  </compound>
+  <compound refid="classmatrix__hal_1_1_microphone_array" kind="class"><name>matrix_hal::MicrophoneArray</name>
+    <member refid="classmatrix__hal_1_1_microphone_array_1a6dbc4038690967b6c46883c41505d222" kind="variable"><name>beamformed_</name></member>
+    <member refid="classmatrix__hal_1_1_microphone_array_1a44be377f01b333f60cf68d9ec092b600" kind="variable"><name>raw_data_</name></member>
+    <member refid="classmatrix__hal_1_1_microphone_array_1a0696b32e73df429f34027758e0045dfc" kind="variable"><name>delayed_data_</name></member>
+    <member refid="classmatrix__hal_1_1_microphone_array_1ae97a79d9a60a0c28ea6bba7d3957739f" kind="variable"><name>gain_</name></member>
+    <member refid="classmatrix__hal_1_1_microphone_array_1a010d7e0c159f81bacd04f9067cac327c" kind="variable"><name>pdm_ratio_</name></member>
+    <member refid="classmatrix__hal_1_1_microphone_array_1a8b919e3aea9aaca1055e4383cb8ac875" kind="variable"><name>sampling_frequency_</name></member>
+    <member refid="classmatrix__hal_1_1_microphone_array_1afd06a71bf7e0616567dabc2224cbc2ac" kind="variable"><name>decimation_ratio_</name></member>
+    <member refid="classmatrix__hal_1_1_microphone_array_1a205a3ad83949394c8e866f163df07f61" kind="variable"><name>fifos_</name></member>
+    <member refid="classmatrix__hal_1_1_microphone_array_1aa5bf714baa8b936bc335f7da81ddcb6f" kind="function"><name>MicrophoneArray</name></member>
+    <member refid="classmatrix__hal_1_1_microphone_array_1a798ebcfe68e50b33d550e67db43ce125" kind="function"><name>~MicrophoneArray</name></member>
+    <member refid="classmatrix__hal_1_1_microphone_array_1a49f7b8098ce7628859daac58677cf815" kind="function"><name>Setup</name></member>
+    <member refid="classmatrix__hal_1_1_microphone_array_1af160e5ae0153ed2cf80caac789ad09d8" kind="function"><name>Read</name></member>
+    <member refid="classmatrix__hal_1_1_microphone_array_1a9a13bf17248ae2c0deb8e6c5d5f07f4f" kind="function"><name>SamplingRate</name></member>
+    <member refid="classmatrix__hal_1_1_microphone_array_1a9f87e49333ee9a2dcd6a07881d39c849" kind="function"><name>DecimationRatio</name></member>
+    <member refid="classmatrix__hal_1_1_microphone_array_1ac9d4d478ea06d6e50d6e7a9d0fb2e174" kind="function"><name>Gain</name></member>
+    <member refid="classmatrix__hal_1_1_microphone_array_1a0c6e18411c45735c4085f3b81863d70e" kind="function"><name>GetDecimationRatio</name></member>
+    <member refid="classmatrix__hal_1_1_microphone_array_1a83b02de5dffcf2766949347d6ce2dbac" kind="function"><name>GetPDMRatio</name></member>
+    <member refid="classmatrix__hal_1_1_microphone_array_1a9f23ccb9639a53e9d6ad13847df129a8" kind="function"><name>SetPDMRatio</name></member>
+    <member refid="classmatrix__hal_1_1_microphone_array_1adc4aa3374274135db89675ba487b6139" kind="function"><name>SetSamplingRate</name></member>
+    <member refid="classmatrix__hal_1_1_microphone_array_1a70b3cc85db2c20ed02dc82f3d06564c3" kind="function"><name>SetDecimationRatio</name></member>
+    <member refid="classmatrix__hal_1_1_microphone_array_1a5f4da7020b8438d54c3013dcedbc430d" kind="function"><name>GetGain</name></member>
+    <member refid="classmatrix__hal_1_1_microphone_array_1ada07f00a6ff9a7944e30e8207affcb04" kind="function"><name>SetGain</name></member>
+    <member refid="classmatrix__hal_1_1_microphone_array_1a01ac53ee6bd5ef7df39a3795eec9e5c3" kind="function"><name>ReadConfValues</name></member>
+    <member refid="classmatrix__hal_1_1_microphone_array_1afeff10bfb4b6d9fb51be38de42abc2c0" kind="function"><name>ShowConfiguration</name></member>
+    <member refid="classmatrix__hal_1_1_microphone_array_1adbf7d30614c5dc692c88b2c3102a3582" kind="function"><name>Channels</name></member>
+    <member refid="classmatrix__hal_1_1_microphone_array_1a4a571c00a46caec234fe8380a1281ae9" kind="function"><name>NumberOfSamples</name></member>
+    <member refid="classmatrix__hal_1_1_microphone_array_1a0ef486268529b6d0355170d335793597" kind="function"><name>At</name></member>
+    <member refid="classmatrix__hal_1_1_microphone_array_1ad2af4a8bc76b8329096e1d670b87d583" kind="function"><name>Beam</name></member>
+    <member refid="classmatrix__hal_1_1_microphone_array_1a8493ed0a69d5d7479d515644e78055cd" kind="function"><name>CalculateDelays</name></member>
+  </compound>
+  <compound refid="classmatrix__hal_1_1_pressure_data" kind="class"><name>matrix_hal::PressureData</name>
+    <member refid="classmatrix__hal_1_1_pressure_data_1aff316f90b123d245d14e7d530c935846" kind="variable"><name>altitude</name></member>
+    <member refid="classmatrix__hal_1_1_pressure_data_1a422a5342789e1eafc670dc2431e1cdbe" kind="variable"><name>pressure</name></member>
+    <member refid="classmatrix__hal_1_1_pressure_data_1a45266ff495c93b9c4aea0bc0d3e26c65" kind="variable"><name>temperature</name></member>
+  </compound>
+  <compound refid="classaudio__transport_1_1_ros_gst_capture" kind="class"><name>audio_transport::RosGstCapture</name>
+    <member refid="classaudio__transport_1_1_ros_gst_capture_1a93f6c8fd41cabb0616f2f7bd18ec5c59" kind="variable"><name>_nh</name></member>
+    <member refid="classaudio__transport_1_1_ros_gst_capture_1a0d620309054a6ae1ddf72f356b2f3012" kind="variable"><name>_pub</name></member>
+    <member refid="classaudio__transport_1_1_ros_gst_capture_1a3b89e4b70e6bf25706ca1d76ec33610f" kind="variable"><name>_gst_thread</name></member>
+    <member refid="classaudio__transport_1_1_ros_gst_capture_1abd43742b4f37a55a6b08e9dcce24a4cf" kind="variable"><name>_pipeline</name></member>
+    <member refid="classaudio__transport_1_1_ros_gst_capture_1a8c41a7c2760e8b7a77e51fa860b40ad5" kind="variable"><name>_source</name></member>
+    <member refid="classaudio__transport_1_1_ros_gst_capture_1a06f776c83d26d05ad93e925897ec5861" kind="variable"><name>_filter</name></member>
+    <member refid="classaudio__transport_1_1_ros_gst_capture_1ad7541e7c6b834bd00cc8d284b6489772" kind="variable"><name>_sink</name></member>
+    <member refid="classaudio__transport_1_1_ros_gst_capture_1a157888d10cc92106f5c534514376f9bb" kind="variable"><name>_convert</name></member>
+    <member refid="classaudio__transport_1_1_ros_gst_capture_1a42fa67dfb6864166bc974a9a9c5a10f4" kind="variable"><name>_encode</name></member>
+    <member refid="classaudio__transport_1_1_ros_gst_capture_1ad05c53d9ee98daa79feced6229a5390b" kind="variable"><name>_bus</name></member>
+    <member refid="classaudio__transport_1_1_ros_gst_capture_1a9b7fa4219bfd264a9edcb4fd0b79a54f" kind="variable"><name>_bitrate</name></member>
+    <member refid="classaudio__transport_1_1_ros_gst_capture_1a02fe182d42188796a8c3a6277ee8152b" kind="variable"><name>_channels</name></member>
+    <member refid="classaudio__transport_1_1_ros_gst_capture_1a83d2509d92b5229f199a4e0164f94112" kind="variable"><name>_depth</name></member>
+    <member refid="classaudio__transport_1_1_ros_gst_capture_1ae6ea1e3d5421a6b5bf5ca1b0177195c3" kind="variable"><name>_sample_rate</name></member>
+    <member refid="classaudio__transport_1_1_ros_gst_capture_1aef2dd25676c822f6c6e8396e2a8e0438" kind="variable"><name>_topic</name></member>
+    <member refid="classaudio__transport_1_1_ros_gst_capture_1a91357fe56b411d7650fb12fea184b665" kind="variable"><name>_loop</name></member>
+    <member refid="classaudio__transport_1_1_ros_gst_capture_1a3306788f53569c9116b957d702b3d9be" kind="variable"><name>_format</name></member>
+    <member refid="classaudio__transport_1_1_ros_gst_capture_1a48ec4cd3c826696140c66a5a58042cc7" kind="function"><name>RosGstCapture</name></member>
+    <member refid="classaudio__transport_1_1_ros_gst_capture_1ab4d4dcb6d771312c3744e96729579709" kind="function"><name>~RosGstCapture</name></member>
+    <member refid="classaudio__transport_1_1_ros_gst_capture_1a8b3195d7f2bb39af1a05323af7e41178" kind="function"><name>exitOnMainThread</name></member>
+    <member refid="classaudio__transport_1_1_ros_gst_capture_1a612397b4a6bac075406372b10e565874" kind="function"><name>publish</name></member>
+    <member refid="classaudio__transport_1_1_ros_gst_capture_1adaa0ea2e1c35f56e8694700268e45fb4" kind="function"><name>onNewBuffer</name></member>
+    <member refid="classaudio__transport_1_1_ros_gst_capture_1a3486f56eb77ccee094f0d186fb348dd3" kind="function"><name>onMessage</name></member>
+  </compound>
+  <compound refid="classmatrix__hal_1_1_wishbone_bus" kind="class"><name>matrix_hal::WishboneBus</name>
+    <member refid="classmatrix__hal_1_1_wishbone_bus_1af505e8864217d31c0f8005fd21ca8d12" kind="variable"><name>device_name_</name></member>
+    <member refid="classmatrix__hal_1_1_wishbone_bus_1aeef4cfde4e5838e659eb910c518438fb" kind="variable"><name>spi_fd_</name></member>
+    <member refid="classmatrix__hal_1_1_wishbone_bus_1a7fb4bd3fe795abde4170dc30f19c59b7" kind="variable"><name>spi_fifo_size_</name></member>
+    <member refid="classmatrix__hal_1_1_wishbone_bus_1a5d82930cae20cc0f5ebe6dc5183bea96" kind="variable"><name>spi_mode_</name></member>
+    <member refid="classmatrix__hal_1_1_wishbone_bus_1a18a9711a3aefda1bb0fbb35efda66473" kind="variable"><name>spi_bits_</name></member>
+    <member refid="classmatrix__hal_1_1_wishbone_bus_1ab5eb7407738333fea4541f37f2e9fdc6" kind="variable"><name>spi_speed_</name></member>
+    <member refid="classmatrix__hal_1_1_wishbone_bus_1ac9b0175167dee9032ff0f0ac7f52f070" kind="variable"><name>spi_delay_</name></member>
+    <member refid="classmatrix__hal_1_1_wishbone_bus_1a318fc238ffc2dc7979f690769d8a69f0" kind="variable"><name>rx_buffer_</name></member>
+    <member refid="classmatrix__hal_1_1_wishbone_bus_1ae20cae3e82f11ccb963a611e9a11bfd9" kind="variable"><name>tx_buffer_</name></member>
+    <member refid="classmatrix__hal_1_1_wishbone_bus_1a3806af24bd8b8807439c42c5620d7035" kind="variable"><name>fpga_frequency_</name></member>
+    <member refid="classmatrix__hal_1_1_wishbone_bus_1a5e98b7c374e5bcb48020b632b256029e" kind="variable"><name>mutex_</name></member>
+    <member refid="classmatrix__hal_1_1_wishbone_bus_1ad84ec9e2a4908eacafaaa22ba9cadf97" kind="function"><name>WishboneBus</name></member>
+    <member refid="classmatrix__hal_1_1_wishbone_bus_1a8c09419f7dc2c77e3381dd04b38c3b05" kind="function"><name>SpiInit</name></member>
+    <member refid="classmatrix__hal_1_1_wishbone_bus_1a62aaee7cfa4a82b338a905555204d7c5" kind="function"><name>SpiWrite</name></member>
+    <member refid="classmatrix__hal_1_1_wishbone_bus_1a531e4fed82777f8957ff995111d3f458" kind="function"><name>SpiWrite16</name></member>
+    <member refid="classmatrix__hal_1_1_wishbone_bus_1a5620c3afa74d1363d9619aa89bf1b6df" kind="function"><name>GetSoftwareVersion</name></member>
+    <member refid="classmatrix__hal_1_1_wishbone_bus_1a228922ab67bc9e8549da011e5e59e4c4" kind="function"><name>GetFPGAFrequency</name></member>
+    <member refid="classmatrix__hal_1_1_wishbone_bus_1a96925b151faf6efad1e3c79da63512ca" kind="function"><name>SpiReadBurst</name></member>
+    <member refid="classmatrix__hal_1_1_wishbone_bus_1a80eaff0356e115a5a414019fb551be52" kind="function"><name>SpiRead</name></member>
+    <member refid="classmatrix__hal_1_1_wishbone_bus_1a504e1681714d73005f539d0a0a4d422c" kind="function"><name>SpiRead16</name></member>
+    <member refid="classmatrix__hal_1_1_wishbone_bus_1adf796881398d0a22c5ae97647b8c5f47" kind="function"><name>SpiClose</name></member>
+    <member refid="classmatrix__hal_1_1_wishbone_bus_1a187d2d0180e8893e0715fd5af8e511c5" kind="function"><name>FPGAClock</name></member>
+    <member refid="classmatrix__hal_1_1_wishbone_bus_1a30e0a9c7d47579199c57b3c3869066d6" kind="function"><name>SpiTransfer</name></member>
+  </compound>
+  <compound refid="namespaceaudio__transport" kind="namespace"><name>audio_transport</name>
+  </compound>
+  <compound refid="namespaceconf" kind="namespace"><name>conf</name>
+    <member refid="conf_8py_1ac9f32ab656bf05ad872fd46e03504cc8" kind="variable"><name>on_rtd</name></member>
+    <member refid="conf_8py_1ae475e080536acb271a0a0efe56c3ba42" kind="variable"><name>extensions</name></member>
+    <member refid="conf_8py_1ae850ae634911b713e036b43894fdd525" kind="variable"><name>templates_path</name></member>
+    <member refid="conf_8py_1a10af2a769eb3bd3322e874f677e435b1" kind="variable"><name>source_suffix</name></member>
+    <member refid="conf_8py_1a6fcd7e5236f355b1e1a55f9d95988810" kind="variable"><name>master_doc</name></member>
+    <member refid="conf_8py_1a45653c983098153b78e33600e39230eb" kind="variable"><name>project</name></member>
+    <member refid="conf_8py_1a33fa97cf51dcb25970fbf53f10159589" kind="variable"><name>copyright</name></member>
+    <member refid="conf_8py_1a637c239d256432248aa8d9f3ab0b8c52" kind="variable"><name>author</name></member>
+    <member refid="conf_8py_1ade15c5b54093b64d7c428ec19ca5b1cb" kind="variable"><name>version</name></member>
+    <member refid="conf_8py_1a325dc746d8bf05c54d26351c35a21d90" kind="variable"><name>release</name></member>
+    <member refid="conf_8py_1acb47d2c0c2904fa7d36b63142533f383" kind="variable"><name>breathe_projects</name></member>
+    <member refid="conf_8py_1a6eba2d2c7ae923054b1c49e686ec89b9" kind="variable"><name>breathe_default_project</name></member>
+    <member refid="conf_8py_1a4aa7a2bc17feeaa23e59b244158394b5" kind="variable"><name>language</name></member>
+    <member refid="conf_8py_1a7ad48fb6f3e9b129c02346ea0d3527c1" kind="variable"><name>exclude_patterns</name></member>
+    <member refid="conf_8py_1a641130e096b26cba8a5d63ed38684de7" kind="variable"><name>pygments_style</name></member>
+    <member refid="conf_8py_1a8fe7f0d85f975f4ecba5cb6066959a09" kind="variable"><name>todo_include_todos</name></member>
+    <member refid="conf_8py_1a6c3bfcc1a44546c1c75ce20f55bd0fd6" kind="variable"><name>html_theme</name></member>
+    <member refid="conf_8py_1a4960231f83b1b44a1ffcd212903b62e8" kind="variable"><name>html_theme_path</name></member>
+    <member refid="conf_8py_1af4fb5d8851ccaade135c2668dd3ced41" kind="variable"><name>html_static_path</name></member>
+    <member refid="conf_8py_1aab7fddb2766ce3c430d8246fbfdbc7b1" kind="variable"><name>htmlhelp_basename</name></member>
+    <member refid="conf_8py_1a33619d385ad23765ac6ebb58bf82d43d" kind="variable"><name>latex_elements</name></member>
+    <member refid="conf_8py_1a85efc5fee48a26fa2d651f6eeb38fc2b" kind="variable"><name>man_pages</name></member>
+    <member refid="conf_8py_1a54b0faed214ac92017d5689efbb10672" kind="variable"><name>texinfo_documents</name></member>
+    <member refid="conf_8py_1a8375f4f963de3ac8026eaa9beced9564" kind="variable"><name>intersphinx_mapping</name></member>
+  </compound>
+  <compound refid="namespacematrix__hal" kind="namespace"><name>matrix_hal</name>
+    <member refid="creator__memory__map_8h_1a3720281799e10b6b959c2c9604904dae" kind="variable"><name>kConfBaseAddress</name></member>
+    <member refid="creator__memory__map_8h_1a7d808fdff42507cebf8a4440f58160f4" kind="variable"><name>kUartBaseAddress</name></member>
+    <member refid="creator__memory__map_8h_1a91f0fe393051f02bdef4fa8be8445b0c" kind="variable"><name>kMicrophoneArrayBaseAddress</name></member>
+    <member refid="creator__memory__map_8h_1a6208699aba59be0ee798b5e87a5f6fe7" kind="variable"><name>kEverloopBaseAddress</name></member>
+    <member refid="creator__memory__map_8h_1a57f6401cdb2ab36b7d6ad205f2cda21d" kind="variable"><name>kGPIOBaseAddress</name></member>
+    <member refid="creator__memory__map_8h_1a402c7492def007c2c7bb9114e9666bef" kind="variable"><name>kMCUBaseAddress</name></member>
+    <member refid="creator__memory__map_8h_1af5b7230506b5b1ae992b9925f6054c5e" kind="variable"><name>kMemoryOffsetUV</name></member>
+    <member refid="creator__memory__map_8h_1ae92621ff379f4978ab0fca94ea5279d1" kind="variable"><name>kMemoryOffsetPressure</name></member>
+    <member refid="creator__memory__map_8h_1ac4d4df026325ad74e4343b0ffa9d7795" kind="variable"><name>kMemoryOffsetHumidity</name></member>
+    <member refid="creator__memory__map_8h_1aec472823d24571e6599b645bce166721" kind="variable"><name>kMemoryOffsetIMU</name></member>
+    <member refid="creator__memory__map_8h_1a1272a5659105fc1b8bcc4a239f1788ef" kind="variable"><name>kMemoryOffsetMCU</name></member>
+    <member refid="everloop__image_8h_1a2936bfc44c1a951fc5aaf0c14952c427" kind="variable"><name>kMatrixCreatorNLeds</name></member>
+    <member refid="microphone__array_8h_1a0edcd1eee4806cc0fa04a8ebffe881d2" kind="variable"><name>kPDMFrequency</name></member>
+    <member refid="microphone__array_8h_1a248ef8dce979cfb935904430ad137f64" kind="variable"><name>kCICStages</name></member>
+    <member refid="microphone__array_8h_1a3e54273f1fd4a2f885611d0b9aabf673" kind="variable"><name>kCICWidth</name></member>
+    <member refid="microphone__array_8h_1ab2d4bf2f6d1f9373cdd1b1574947b1be" kind="variable"><name>kMicarrayBufferSize</name></member>
+    <member refid="microphone__array_8h_1ae5f9649ea44da78edb4d9bbeb4d6be68" kind="variable"><name>kMicrophoneArrayIRQ</name></member>
+    <member refid="microphone__array_8h_1a3c5890fa9ddfef33d1b3a0e2beb0761a" kind="variable"><name>kMicrophoneChannels</name></member>
+    <member refid="microphone__array__location_8h_1ae0001c0cb830be7165d79d4b29d1bfc0" kind="variable"><name>micarray_location</name></member>
+    <member refid="wishbone__bus_8h_1ab55be73f638e1e1abecc5610beff976c" kind="variable"><name>kFPGAClock</name></member>
+  </compound>
+  <compound refid="namespacescripts" kind="namespace"><name>scripts</name>
+  </compound>
+  <compound refid="namespacescripts_1_1recv__stream" kind="namespace"><name>scripts::recv_stream</name>
+    <member refid="recv__stream_8py_1aec180e74259a6142685b295223423378" kind="function"><name>stream_callback</name></member>
+    <member refid="recv__stream_8py_1a73fb6b2f9de854c4c2a92ba45c100152" kind="function"><name>stream_listener</name></member>
+  </compound>
+  <compound refid="circular__queue_8h" kind="file"><name>circular_queue.h</name>
+  </compound>
+  <compound refid="creator__memory__map_8h" kind="file"><name>creator_memory_map.h</name>
+  </compound>
+  <compound refid="cross__correlation_8h" kind="file"><name>cross_correlation.h</name>
+  </compound>
+  <compound refid="direction__of__arrival_8h" kind="file"><name>direction_of_arrival.h</name>
+  </compound>
+  <compound refid="everloop_8h" kind="file"><name>everloop.h</name>
+  </compound>
+  <compound refid="everloop__image_8h" kind="file"><name>everloop_image.h</name>
+  </compound>
+  <compound refid="imu__data_8h" kind="file"><name>imu_data.h</name>
+  </compound>
+  <compound refid="matrix__driver_8h" kind="file"><name>matrix_driver.h</name>
+  </compound>
+  <compound refid="microphone__array_8h" kind="file"><name>microphone_array.h</name>
+  </compound>
+  <compound refid="microphone__array__location_8h" kind="file"><name>microphone_array_location.h</name>
+  </compound>
+  <compound refid="pressure__data_8h" kind="file"><name>pressure_data.h</name>
+  </compound>
+  <compound refid="wishbone__bus_8h" kind="file"><name>wishbone_bus.h</name>
+  </compound>
+  <compound refid="cross__correlation_8cpp" kind="file"><name>cross_correlation.cpp</name>
+  </compound>
+  <compound refid="direction__of__arrival_8cpp" kind="file"><name>direction_of_arrival.cpp</name>
+  </compound>
+  <compound refid="direction__of__arrival__demo_8cpp" kind="file"><name>direction_of_arrival_demo.cpp</name>
+    <member refid="direction__of__arrival__demo_8cpp_1a9779d3a7d8f555d1ddaf6275901d79f7" kind="variable"><name>led_offset</name></member>
+    <member refid="direction__of__arrival__demo_8cpp_1a47fb7a1432d90ae137ace171981abfe5" kind="variable"><name>lut</name></member>
+    <member refid="direction__of__arrival__demo_8cpp_1a6f4666a473765663a69baaec83552333" kind="function"><name>DEFINE_bool</name></member>
+    <member refid="direction__of__arrival__demo_8cpp_1ab1c2f83a5535350b48e2674d71c04303" kind="function"><name>DEFINE_int32</name></member>
+    <member refid="direction__of__arrival__demo_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="everloop_8cpp" kind="file"><name>everloop.cpp</name>
+  </compound>
+  <compound refid="matrix__driver_8cpp" kind="file"><name>matrix_driver.cpp</name>
+  </compound>
+  <compound refid="microphone__array_8cpp" kind="file"><name>microphone_array.cpp</name>
+  </compound>
+  <compound refid="wishbone__bus_8cpp" kind="file"><name>wishbone_bus.cpp</name>
+  </compound>
+  <compound refid="conf_8py" kind="file"><name>conf.py</name>
+  </compound>
+  <compound refid="_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="recv__stream_8py" kind="file"><name>recv_stream.py</name>
+  </compound>
+  <compound refid="audio__capture_8cpp" kind="file"><name>audio_capture.cpp</name>
+    <member refid="audio__capture_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="md___users__kevin__documents__uni__r_c_i__roboy_git_repos_roboy_audio__r_e_a_d_m_e" kind="page"><name>md__Users_Kevin_Documents_Uni_RCI_Roboy_git_repos_roboy_audio_README</name>
+  </compound>
+  <compound refid="dir_b4be485efbc1ea62cf4f8fcc9b814763" kind="dir"><name>/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation</name>
+  </compound>
+  <compound refid="dir_94042d2a4cc2200a042f0dbbab010fb2" kind="dir"><name>/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include</name>
+  </compound>
+  <compound refid="dir_99bb8d3e72753c9dd17f053be67fa1a4" kind="dir"><name>/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream</name>
+  </compound>
+  <compound refid="dir_87bd9fe9dcd9db5c1963e08f8b923906" kind="dir"><name>/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/scripts</name>
+  </compound>
+  <compound refid="dir_f2deacb5f7a1a2eaba36d752699f50e6" kind="dir"><name>/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/src</name>
+  </compound>
+  <compound refid="dir_e61185094ee38072c47abc92f8244005" kind="dir"><name>/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/src</name>
+  </compound>
+</doxygenindex>

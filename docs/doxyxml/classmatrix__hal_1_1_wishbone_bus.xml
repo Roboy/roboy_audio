@@ -1,0 +1,413 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classmatrix__hal_1_1_wishbone_bus" kind="class" language="C++" prot="public">
+    <compoundname>matrix_hal::WishboneBus</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmatrix__hal_1_1_wishbone_bus_1af505e8864217d31c0f8005fd21ca8d12" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string matrix_hal::WishboneBus::device_name_</definition>
+        <argsstring></argsstring>
+        <name>device_name_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/wishbone_bus.h" line="51" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/wishbone_bus.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmatrix__hal_1_1_wishbone_bus_1aeef4cfde4e5838e659eb910c518438fb" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int matrix_hal::WishboneBus::spi_fd_</definition>
+        <argsstring></argsstring>
+        <name>spi_fd_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/wishbone_bus.h" line="52" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/wishbone_bus.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmatrix__hal_1_1_wishbone_bus_1a7fb4bd3fe795abde4170dc30f19c59b7" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int matrix_hal::WishboneBus::spi_fifo_size_</definition>
+        <argsstring></argsstring>
+        <name>spi_fifo_size_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/wishbone_bus.h" line="53" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/wishbone_bus.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmatrix__hal_1_1_wishbone_bus_1a5d82930cae20cc0f5ebe6dc5183bea96" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int matrix_hal::WishboneBus::spi_mode_</definition>
+        <argsstring></argsstring>
+        <name>spi_mode_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/wishbone_bus.h" line="54" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/wishbone_bus.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmatrix__hal_1_1_wishbone_bus_1a18a9711a3aefda1bb0fbb35efda66473" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int matrix_hal::WishboneBus::spi_bits_</definition>
+        <argsstring></argsstring>
+        <name>spi_bits_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/wishbone_bus.h" line="55" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/wishbone_bus.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmatrix__hal_1_1_wishbone_bus_1ab5eb7407738333fea4541f37f2e9fdc6" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t matrix_hal::WishboneBus::spi_speed_</definition>
+        <argsstring></argsstring>
+        <name>spi_speed_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/wishbone_bus.h" line="56" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/wishbone_bus.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmatrix__hal_1_1_wishbone_bus_1ac9b0175167dee9032ff0f0ac7f52f070" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int matrix_hal::WishboneBus::spi_delay_</definition>
+        <argsstring></argsstring>
+        <name>spi_delay_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/wishbone_bus.h" line="57" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/wishbone_bus.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmatrix__hal_1_1_wishbone_bus_1a318fc238ffc2dc7979f690769d8a69f0" prot="private" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char matrix_hal::WishboneBus::rx_buffer_[4096]</definition>
+        <argsstring>[4096]</argsstring>
+        <name>rx_buffer_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/wishbone_bus.h" line="58" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/wishbone_bus.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmatrix__hal_1_1_wishbone_bus_1ae20cae3e82f11ccb963a611e9a11bfd9" prot="private" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char matrix_hal::WishboneBus::tx_buffer_[4096]</definition>
+        <argsstring>[4096]</argsstring>
+        <name>tx_buffer_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/wishbone_bus.h" line="59" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/wishbone_bus.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmatrix__hal_1_1_wishbone_bus_1a3806af24bd8b8807439c42c5620d7035" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t matrix_hal::WishboneBus::fpga_frequency_</definition>
+        <argsstring></argsstring>
+        <name>fpga_frequency_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/wishbone_bus.h" line="60" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/wishbone_bus.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmatrix__hal_1_1_wishbone_bus_1a5e98b7c374e5bcb48020b632b256029e" prot="private" static="no" mutable="yes">
+        <type>std::mutex</type>
+        <definition>std::mutex matrix_hal::WishboneBus::mutex_</definition>
+        <argsstring></argsstring>
+        <name>mutex_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/wishbone_bus.h" line="61" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/wishbone_bus.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmatrix__hal_1_1_wishbone_bus_1ad84ec9e2a4908eacafaaa22ba9cadf97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>matrix_hal::WishboneBus::WishboneBus</definition>
+        <argsstring>()</argsstring>
+        <name>WishboneBus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/wishbone_bus.h" line="31" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/src/wishbone_bus.cpp" bodystart="43" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classmatrix__hal_1_1_wishbone_bus_1a8c09419f7dc2c77e3381dd04b38c3b05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool matrix_hal::WishboneBus::SpiInit</definition>
+        <argsstring>()</argsstring>
+        <name>SpiInit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/wishbone_bus.h" line="33" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/src/wishbone_bus.cpp" bodystart="51" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classmatrix__hal_1_1_wishbone_bus_1a62aaee7cfa4a82b338a905555204d7c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool matrix_hal::WishboneBus::SpiWrite</definition>
+        <argsstring>(uint16_t add, unsigned char *data, int length)</argsstring>
+        <name>SpiWrite</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>add</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/wishbone_bus.h" line="34" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/src/wishbone_bus.cpp" bodystart="135" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classmatrix__hal_1_1_wishbone_bus_1a531e4fed82777f8957ff995111d3f458" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool matrix_hal::WishboneBus::SpiWrite16</definition>
+        <argsstring>(uint16_t add, uint16_t data)</argsstring>
+        <name>SpiWrite16</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>add</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/wishbone_bus.h" line="35" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/src/wishbone_bus.cpp" bodystart="119" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classmatrix__hal_1_1_wishbone_bus_1a5620c3afa74d1363d9619aa89bf1b6df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool matrix_hal::WishboneBus::GetSoftwareVersion</definition>
+        <argsstring>(char *version, int length)</argsstring>
+        <name>GetSoftwareVersion</name>
+        <param>
+          <type>char *</type>
+          <declname>version</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/wishbone_bus.h" line="36" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/src/wishbone_bus.cpp" bodystart="186" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classmatrix__hal_1_1_wishbone_bus_1a228922ab67bc9e8549da011e5e59e4c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool matrix_hal::WishboneBus::GetFPGAFrequency</definition>
+        <argsstring>()</argsstring>
+        <name>GetFPGAFrequency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/wishbone_bus.h" line="37" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/src/wishbone_bus.cpp" bodystart="192" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="classmatrix__hal_1_1_wishbone_bus_1a96925b151faf6efad1e3c79da63512ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool matrix_hal::WishboneBus::SpiReadBurst</definition>
+        <argsstring>(uint16_t add, unsigned char *data, int length)</argsstring>
+        <name>SpiReadBurst</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>add</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/wishbone_bus.h" line="38" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/src/wishbone_bus.cpp" bodystart="145" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classmatrix__hal_1_1_wishbone_bus_1a80eaff0356e115a5a414019fb551be52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool matrix_hal::WishboneBus::SpiRead</definition>
+        <argsstring>(uint16_t add, unsigned char *data, int length)</argsstring>
+        <name>SpiRead</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>add</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/wishbone_bus.h" line="39" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/src/wishbone_bus.cpp" bodystart="160" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="classmatrix__hal_1_1_wishbone_bus_1a504e1681714d73005f539d0a0a4d422c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool matrix_hal::WishboneBus::SpiRead16</definition>
+        <argsstring>(uint16_t add, unsigned char *data)</argsstring>
+        <name>SpiRead16</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>add</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/wishbone_bus.h" line="40" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/src/wishbone_bus.cpp" bodystart="169" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classmatrix__hal_1_1_wishbone_bus_1adf796881398d0a22c5ae97647b8c5f47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void matrix_hal::WishboneBus::SpiClose</definition>
+        <argsstring>()</argsstring>
+        <name>SpiClose</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/wishbone_bus.h" line="41" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/src/wishbone_bus.cpp" bodystart="200" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="classmatrix__hal_1_1_wishbone_bus_1a187d2d0180e8893e0715fd5af8e511c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t matrix_hal::WishboneBus::FPGAClock</definition>
+        <argsstring>()</argsstring>
+        <name>FPGAClock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/wishbone_bus.h" line="42" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/wishbone_bus.h" bodystart="42" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmatrix__hal_1_1_wishbone_bus_1a30e0a9c7d47579199c57b3c3869066d6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool matrix_hal::WishboneBus::SpiTransfer</definition>
+        <argsstring>(unsigned char *send_buffer, unsigned char *receive_buffer, unsigned int size)</argsstring>
+        <name>SpiTransfer</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>send_buffer</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>receive_buffer</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/wishbone_bus.h" line="46" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/src/wishbone_bus.cpp" bodystart="99" bodyend="117"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/wishbone_bus.h" line="29" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/wishbone_bus.h" bodystart="29" bodyend="62"/>
+    <listofallmembers>
+      <member refid="classmatrix__hal_1_1_wishbone_bus_1af505e8864217d31c0f8005fd21ca8d12" prot="private" virt="non-virtual"><scope>matrix_hal::WishboneBus</scope><name>device_name_</name></member>
+      <member refid="classmatrix__hal_1_1_wishbone_bus_1a3806af24bd8b8807439c42c5620d7035" prot="private" virt="non-virtual"><scope>matrix_hal::WishboneBus</scope><name>fpga_frequency_</name></member>
+      <member refid="classmatrix__hal_1_1_wishbone_bus_1a187d2d0180e8893e0715fd5af8e511c5" prot="public" virt="non-virtual"><scope>matrix_hal::WishboneBus</scope><name>FPGAClock</name></member>
+      <member refid="classmatrix__hal_1_1_wishbone_bus_1a228922ab67bc9e8549da011e5e59e4c4" prot="public" virt="non-virtual"><scope>matrix_hal::WishboneBus</scope><name>GetFPGAFrequency</name></member>
+      <member refid="classmatrix__hal_1_1_wishbone_bus_1a5620c3afa74d1363d9619aa89bf1b6df" prot="public" virt="non-virtual"><scope>matrix_hal::WishboneBus</scope><name>GetSoftwareVersion</name></member>
+      <member refid="classmatrix__hal_1_1_wishbone_bus_1a5e98b7c374e5bcb48020b632b256029e" prot="private" virt="non-virtual"><scope>matrix_hal::WishboneBus</scope><name>mutex_</name></member>
+      <member refid="classmatrix__hal_1_1_wishbone_bus_1a318fc238ffc2dc7979f690769d8a69f0" prot="private" virt="non-virtual"><scope>matrix_hal::WishboneBus</scope><name>rx_buffer_</name></member>
+      <member refid="classmatrix__hal_1_1_wishbone_bus_1a18a9711a3aefda1bb0fbb35efda66473" prot="private" virt="non-virtual"><scope>matrix_hal::WishboneBus</scope><name>spi_bits_</name></member>
+      <member refid="classmatrix__hal_1_1_wishbone_bus_1ac9b0175167dee9032ff0f0ac7f52f070" prot="private" virt="non-virtual"><scope>matrix_hal::WishboneBus</scope><name>spi_delay_</name></member>
+      <member refid="classmatrix__hal_1_1_wishbone_bus_1aeef4cfde4e5838e659eb910c518438fb" prot="private" virt="non-virtual"><scope>matrix_hal::WishboneBus</scope><name>spi_fd_</name></member>
+      <member refid="classmatrix__hal_1_1_wishbone_bus_1a7fb4bd3fe795abde4170dc30f19c59b7" prot="private" virt="non-virtual"><scope>matrix_hal::WishboneBus</scope><name>spi_fifo_size_</name></member>
+      <member refid="classmatrix__hal_1_1_wishbone_bus_1a5d82930cae20cc0f5ebe6dc5183bea96" prot="private" virt="non-virtual"><scope>matrix_hal::WishboneBus</scope><name>spi_mode_</name></member>
+      <member refid="classmatrix__hal_1_1_wishbone_bus_1ab5eb7407738333fea4541f37f2e9fdc6" prot="private" virt="non-virtual"><scope>matrix_hal::WishboneBus</scope><name>spi_speed_</name></member>
+      <member refid="classmatrix__hal_1_1_wishbone_bus_1adf796881398d0a22c5ae97647b8c5f47" prot="public" virt="non-virtual"><scope>matrix_hal::WishboneBus</scope><name>SpiClose</name></member>
+      <member refid="classmatrix__hal_1_1_wishbone_bus_1a8c09419f7dc2c77e3381dd04b38c3b05" prot="public" virt="non-virtual"><scope>matrix_hal::WishboneBus</scope><name>SpiInit</name></member>
+      <member refid="classmatrix__hal_1_1_wishbone_bus_1a80eaff0356e115a5a414019fb551be52" prot="public" virt="non-virtual"><scope>matrix_hal::WishboneBus</scope><name>SpiRead</name></member>
+      <member refid="classmatrix__hal_1_1_wishbone_bus_1a504e1681714d73005f539d0a0a4d422c" prot="public" virt="non-virtual"><scope>matrix_hal::WishboneBus</scope><name>SpiRead16</name></member>
+      <member refid="classmatrix__hal_1_1_wishbone_bus_1a96925b151faf6efad1e3c79da63512ca" prot="public" virt="non-virtual"><scope>matrix_hal::WishboneBus</scope><name>SpiReadBurst</name></member>
+      <member refid="classmatrix__hal_1_1_wishbone_bus_1a30e0a9c7d47579199c57b3c3869066d6" prot="private" virt="non-virtual"><scope>matrix_hal::WishboneBus</scope><name>SpiTransfer</name></member>
+      <member refid="classmatrix__hal_1_1_wishbone_bus_1a62aaee7cfa4a82b338a905555204d7c5" prot="public" virt="non-virtual"><scope>matrix_hal::WishboneBus</scope><name>SpiWrite</name></member>
+      <member refid="classmatrix__hal_1_1_wishbone_bus_1a531e4fed82777f8957ff995111d3f458" prot="public" virt="non-virtual"><scope>matrix_hal::WishboneBus</scope><name>SpiWrite16</name></member>
+      <member refid="classmatrix__hal_1_1_wishbone_bus_1ae20cae3e82f11ccb963a611e9a11bfd9" prot="private" virt="non-virtual"><scope>matrix_hal::WishboneBus</scope><name>tx_buffer_</name></member>
+      <member refid="classmatrix__hal_1_1_wishbone_bus_1ad84ec9e2a4908eacafaaa22ba9cadf97" prot="public" virt="non-virtual"><scope>matrix_hal::WishboneBus</scope><name>WishboneBus</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

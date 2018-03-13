@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classmatrix__hal_1_1_pressure_data" kind="class" language="C++" prot="public">
+    <compoundname>matrix_hal::PressureData</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmatrix__hal_1_1_pressure_data_1aff316f90b123d245d14e7d530c935846" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float matrix_hal::PressureData::altitude</definition>
+        <argsstring></argsstring>
+        <name>altitude</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/pressure_data.h" line="25" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/pressure_data.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmatrix__hal_1_1_pressure_data_1a422a5342789e1eafc670dc2431e1cdbe" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float matrix_hal::PressureData::pressure</definition>
+        <argsstring></argsstring>
+        <name>pressure</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/pressure_data.h" line="26" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/pressure_data.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmatrix__hal_1_1_pressure_data_1a45266ff495c93b9c4aea0bc0d3e26c65" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float matrix_hal::PressureData::temperature</definition>
+        <argsstring></argsstring>
+        <name>temperature</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/pressure_data.h" line="27" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/pressure_data.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/pressure_data.h" line="23" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/pressure_data.h" bodystart="23" bodyend="28"/>
+    <listofallmembers>
+      <member refid="classmatrix__hal_1_1_pressure_data_1aff316f90b123d245d14e7d530c935846" prot="public" virt="non-virtual"><scope>matrix_hal::PressureData</scope><name>altitude</name></member>
+      <member refid="classmatrix__hal_1_1_pressure_data_1a422a5342789e1eafc670dc2431e1cdbe" prot="public" virt="non-virtual"><scope>matrix_hal::PressureData</scope><name>pressure</name></member>
+      <member refid="classmatrix__hal_1_1_pressure_data_1a45266ff495c93b9c4aea0bc0d3e26c65" prot="public" virt="non-virtual"><scope>matrix_hal::PressureData</scope><name>temperature</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

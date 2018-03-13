@@ -1,0 +1,299 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classmatrix__hal_1_1_direction_of_arrival" kind="class" language="C++" prot="public">
+    <compoundname>matrix_hal::DirectionOfArrival</compoundname>
+    <includes refid="direction__of__arrival_8h" local="no">direction_of_arrival.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmatrix__hal_1_1_direction_of_arrival_1a89dfdb3010ad01b0aaf353c3c55729fc" prot="private" static="no" mutable="no">
+        <type><ref refid="classmatrix__hal_1_1_microphone_array" kindref="compound">MicrophoneArray</ref> &amp;</type>
+        <definition>MicrophoneArray&amp; matrix_hal::DirectionOfArrival::mics_</definition>
+        <argsstring></argsstring>
+        <name>mics_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/direction_of_arrival.h" line="51" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/direction_of_arrival.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmatrix__hal_1_1_direction_of_arrival_1a5140031fb7a180edcccc56c0d739ff05" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int matrix_hal::DirectionOfArrival::length_</definition>
+        <argsstring></argsstring>
+        <name>length_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/direction_of_arrival.h" line="52" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/direction_of_arrival.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmatrix__hal_1_1_direction_of_arrival_1a9346e84e1b8371e6c49d008c1777b677" prot="private" static="no" mutable="no">
+        <type><ref refid="classmatrix__hal_1_1_cross_correlation" kindref="compound">CrossCorrelation</ref> *</type>
+        <definition>CrossCorrelation* matrix_hal::DirectionOfArrival::corr_</definition>
+        <argsstring></argsstring>
+        <name>corr_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/direction_of_arrival.h" line="53" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/direction_of_arrival.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmatrix__hal_1_1_direction_of_arrival_1abce7e971730debee6213c18aee9eb17d" prot="private" static="no" mutable="no">
+        <type>std::valarray&lt; float &gt;</type>
+        <definition>std::valarray&lt;float&gt; matrix_hal::DirectionOfArrival::current_mag_</definition>
+        <argsstring></argsstring>
+        <name>current_mag_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/direction_of_arrival.h" line="54" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/direction_of_arrival.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmatrix__hal_1_1_direction_of_arrival_1abc4b8836e6531f4ca26f626e331221b4" prot="private" static="no" mutable="no">
+        <type>std::valarray&lt; float &gt;</type>
+        <definition>std::valarray&lt;float&gt; matrix_hal::DirectionOfArrival::current_index_</definition>
+        <argsstring></argsstring>
+        <name>current_index_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/direction_of_arrival.h" line="55" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/direction_of_arrival.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmatrix__hal_1_1_direction_of_arrival_1a8c27c8998921ec03311862409a87a93d" prot="private" static="no" mutable="no">
+        <type>std::valarray&lt; int16_t &gt;</type>
+        <definition>std::valarray&lt;int16_t&gt; matrix_hal::DirectionOfArrival::buffer_1D_</definition>
+        <argsstring></argsstring>
+        <name>buffer_1D_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/direction_of_arrival.h" line="56" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/direction_of_arrival.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmatrix__hal_1_1_direction_of_arrival_1abc20dc3c4490e49cc6ca0366ee97b101" prot="private" static="no" mutable="no">
+        <type>std::valarray&lt; int16_t * &gt;</type>
+        <definition>std::valarray&lt;int16_t *&gt; matrix_hal::DirectionOfArrival::buffer_2D_</definition>
+        <argsstring></argsstring>
+        <name>buffer_2D_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/direction_of_arrival.h" line="57" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/direction_of_arrival.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmatrix__hal_1_1_direction_of_arrival_1af188677703161f2198cf52dbfb8254b4" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t matrix_hal::DirectionOfArrival::mic_direction_</definition>
+        <argsstring></argsstring>
+        <name>mic_direction_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/direction_of_arrival.h" line="61" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/direction_of_arrival.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmatrix__hal_1_1_direction_of_arrival_1a370f9532935f0352cdeacd9a1a1351e5" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float matrix_hal::DirectionOfArrival::azimutal_angle_</definition>
+        <argsstring></argsstring>
+        <name>azimutal_angle_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/direction_of_arrival.h" line="62" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/direction_of_arrival.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmatrix__hal_1_1_direction_of_arrival_1a56b06d6ee83974751511099ea7ce2a85" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float matrix_hal::DirectionOfArrival::polar_angle_</definition>
+        <argsstring></argsstring>
+        <name>polar_angle_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/direction_of_arrival.h" line="63" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/direction_of_arrival.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmatrix__hal_1_1_direction_of_arrival_1ac91c7cd8135e1bbd70223bff68c45388" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>matrix_hal::DirectionOfArrival::DirectionOfArrival</definition>
+        <argsstring>(MicrophoneArray &amp;mics)</argsstring>
+        <name>DirectionOfArrival</name>
+        <param>
+          <type><ref refid="classmatrix__hal_1_1_microphone_array" kindref="compound">MicrophoneArray</ref> &amp;</type>
+          <declname>mics</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/direction_of_arrival.h" line="35" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/src/direction_of_arrival.cpp" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmatrix__hal_1_1_direction_of_arrival_1aac0cd1ce7bb5e709593b7f02421a99de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool matrix_hal::DirectionOfArrival::Init</definition>
+        <argsstring>()</argsstring>
+        <name>Init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/direction_of_arrival.h" line="37" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/src/direction_of_arrival.cpp" bodystart="30" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classmatrix__hal_1_1_direction_of_arrival_1a64030cee7e532197e2f0013805b19645" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void matrix_hal::DirectionOfArrival::Calculate</definition>
+        <argsstring>()</argsstring>
+        <name>Calculate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The main function, that estimates the direction of arrival. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/direction_of_arrival.h" line="42" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/src/direction_of_arrival.cpp" bodystart="54" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classmatrix__hal_1_1_direction_of_arrival_1a702abcd02d3bbfd2870c304e90d10109" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float matrix_hal::DirectionOfArrival::GetAzimutalAngle</definition>
+        <argsstring>()</argsstring>
+        <name>GetAzimutalAngle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/direction_of_arrival.h" line="44" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/direction_of_arrival.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classmatrix__hal_1_1_direction_of_arrival_1a3049d2971fb2a828d00bf1136a86e050" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float matrix_hal::DirectionOfArrival::GetPolarAngle</definition>
+        <argsstring>()</argsstring>
+        <name>GetPolarAngle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/direction_of_arrival.h" line="46" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/direction_of_arrival.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classmatrix__hal_1_1_direction_of_arrival_1a6e8502f9c157d0a674fd2369f76eed91" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int matrix_hal::DirectionOfArrival::GetNearestMicrophone</definition>
+        <argsstring>()</argsstring>
+        <name>GetNearestMicrophone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/direction_of_arrival.h" line="48" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/direction_of_arrival.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmatrix__hal_1_1_direction_of_arrival_1aebfd3159f2f2d5828cdffa33e864ee15" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int matrix_hal::DirectionOfArrival::getAbsDiff</definition>
+        <argsstring>(int index)</argsstring>
+        <name>getAbsDiff</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/direction_of_arrival.h" line="59" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/src/direction_of_arrival.cpp" bodystart="47" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The Direction of Arrival estimation class. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class manages the other classes and the data, to be able to provide the estimated direction. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="5">
+        <label>matrix_hal::DirectionOfArrival</label>
+        <link refid="classmatrix__hal_1_1_direction_of_arrival"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>corr_</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>mics_</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>matrix_hal::WishboneBus</label>
+        <link refid="classmatrix__hal_1_1_wishbone_bus"/>
+      </node>
+      <node id="8">
+        <label>matrix_hal::MatrixDriver</label>
+        <link refid="classmatrix__hal_1_1_matrix_driver"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>wishbone_</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>matrix_hal::CrossCorrelation</label>
+        <link refid="classmatrix__hal_1_1_cross_correlation"/>
+      </node>
+      <node id="7">
+        <label>matrix_hal::MicrophoneArray</label>
+        <link refid="classmatrix__hal_1_1_microphone_array"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/direction_of_arrival.h" line="33" column="1" bodyfile="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/doa_estimation/include/direction_of_arrival.h" bodystart="33" bodyend="64"/>
+    <listofallmembers>
+      <member refid="classmatrix__hal_1_1_direction_of_arrival_1a370f9532935f0352cdeacd9a1a1351e5" prot="private" virt="non-virtual"><scope>matrix_hal::DirectionOfArrival</scope><name>azimutal_angle_</name></member>
+      <member refid="classmatrix__hal_1_1_direction_of_arrival_1a8c27c8998921ec03311862409a87a93d" prot="private" virt="non-virtual"><scope>matrix_hal::DirectionOfArrival</scope><name>buffer_1D_</name></member>
+      <member refid="classmatrix__hal_1_1_direction_of_arrival_1abc20dc3c4490e49cc6ca0366ee97b101" prot="private" virt="non-virtual"><scope>matrix_hal::DirectionOfArrival</scope><name>buffer_2D_</name></member>
+      <member refid="classmatrix__hal_1_1_direction_of_arrival_1a64030cee7e532197e2f0013805b19645" prot="public" virt="non-virtual"><scope>matrix_hal::DirectionOfArrival</scope><name>Calculate</name></member>
+      <member refid="classmatrix__hal_1_1_direction_of_arrival_1a9346e84e1b8371e6c49d008c1777b677" prot="private" virt="non-virtual"><scope>matrix_hal::DirectionOfArrival</scope><name>corr_</name></member>
+      <member refid="classmatrix__hal_1_1_direction_of_arrival_1abc4b8836e6531f4ca26f626e331221b4" prot="private" virt="non-virtual"><scope>matrix_hal::DirectionOfArrival</scope><name>current_index_</name></member>
+      <member refid="classmatrix__hal_1_1_direction_of_arrival_1abce7e971730debee6213c18aee9eb17d" prot="private" virt="non-virtual"><scope>matrix_hal::DirectionOfArrival</scope><name>current_mag_</name></member>
+      <member refid="classmatrix__hal_1_1_direction_of_arrival_1ac91c7cd8135e1bbd70223bff68c45388" prot="public" virt="non-virtual"><scope>matrix_hal::DirectionOfArrival</scope><name>DirectionOfArrival</name></member>
+      <member refid="classmatrix__hal_1_1_direction_of_arrival_1aebfd3159f2f2d5828cdffa33e864ee15" prot="private" virt="non-virtual"><scope>matrix_hal::DirectionOfArrival</scope><name>getAbsDiff</name></member>
+      <member refid="classmatrix__hal_1_1_direction_of_arrival_1a702abcd02d3bbfd2870c304e90d10109" prot="public" virt="non-virtual"><scope>matrix_hal::DirectionOfArrival</scope><name>GetAzimutalAngle</name></member>
+      <member refid="classmatrix__hal_1_1_direction_of_arrival_1a6e8502f9c157d0a674fd2369f76eed91" prot="public" virt="non-virtual"><scope>matrix_hal::DirectionOfArrival</scope><name>GetNearestMicrophone</name></member>
+      <member refid="classmatrix__hal_1_1_direction_of_arrival_1a3049d2971fb2a828d00bf1136a86e050" prot="public" virt="non-virtual"><scope>matrix_hal::DirectionOfArrival</scope><name>GetPolarAngle</name></member>
+      <member refid="classmatrix__hal_1_1_direction_of_arrival_1aac0cd1ce7bb5e709593b7f02421a99de" prot="public" virt="non-virtual"><scope>matrix_hal::DirectionOfArrival</scope><name>Init</name></member>
+      <member refid="classmatrix__hal_1_1_direction_of_arrival_1a5140031fb7a180edcccc56c0d739ff05" prot="private" virt="non-virtual"><scope>matrix_hal::DirectionOfArrival</scope><name>length_</name></member>
+      <member refid="classmatrix__hal_1_1_direction_of_arrival_1af188677703161f2198cf52dbfb8254b4" prot="private" virt="non-virtual"><scope>matrix_hal::DirectionOfArrival</scope><name>mic_direction_</name></member>
+      <member refid="classmatrix__hal_1_1_direction_of_arrival_1a89dfdb3010ad01b0aaf353c3c55729fc" prot="private" virt="non-virtual"><scope>matrix_hal::DirectionOfArrival</scope><name>mics_</name></member>
+      <member refid="classmatrix__hal_1_1_direction_of_arrival_1a56b06d6ee83974751511099ea7ce2a85" prot="private" virt="non-virtual"><scope>matrix_hal::DirectionOfArrival</scope><name>polar_angle_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

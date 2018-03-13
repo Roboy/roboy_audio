@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_87bd9fe9dcd9db5c1963e08f8b923906" kind="dir">
+    <compoundname>/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/scripts</compoundname>
+    <innerfile refid="____init_____8py">__init__.py</innerfile>
+    <innerfile refid="recv__stream_8py">recv_stream.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/Kevin/Documents/Uni/RCI/Roboy/git_repos/roboy_audio/roboy_audio_stream/scripts/"/>
+  </compounddef>
+</doxygen>
