@@ -66,7 +66,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Architecture Documentation Wiki'
+project = u'Roboy Audio'
 copyright = u'2016, Raphael Dürscheid, based on Template by Dr. Peter'
 author = u'Raphael Dürscheid, based on Template by Dr. Peter'
 
@@ -100,7 +100,7 @@ language = 'en'
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This patterns also effect to html_static_path and html_extra_path
-exclude_patterns = []
+exclude_patterns = ['CMakeLists.txt']
 
 # The reST default role (used for this markup: `text`) to use for all
 # documents.
