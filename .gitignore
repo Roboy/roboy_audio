@@ -1,6 +1,6 @@
 .idea
 build
-documentation/build
-documentation/doxyxml
+*/build
+*/doxyxml
 doc
 cmake-build-debug
