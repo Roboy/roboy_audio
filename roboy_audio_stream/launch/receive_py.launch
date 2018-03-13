@@ -1,0 +1,4 @@
+<launch>
+  <node name="recv_stream" pkg="roboy_audio_stream" type="recv_stream.py" output="screen">
+  </node>
+</launch>

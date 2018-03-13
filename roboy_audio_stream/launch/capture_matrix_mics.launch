@@ -1,0 +1,68 @@
+<launch>
+  <!-- arecord -l will show available input devices, use the car number as
+      the first number and the subdevice number as the second in a string
+      like hw:1,0 -->
+  <arg name="device" default=""/>
+  <arg name="channels" default="1"/>
+  <arg name="sample_rate" default="16000"/>
+  <arg name="ns" default="audio"/>
+
+  <group ns="$(arg ns)">
+  <node name="mic0" pkg="roboy_audio_stream" type="roboy_audio_capture" output="screen">
+    <param name="bitrate" value="128"/>
+    <param name="device" value="mic_channel0"/>
+    <param name="channels" value="1"/>
+    <param name="sample_rate" value="8000"/>
+    <param name="topic" value="mic0"/>
+  </node>
+  <node name="mic1" pkg="roboy_audio_stream" type="roboy_audio_capture" output="screen">
+      <param name="bitrate" value="128"/>
+      <param name="device" value="mic_channel1"/>
+      <param name="channels" value="1"/>
+      <param name="sample_rate" value="8000"/>
+      <param name="topic" value="mic1"/>
+  </node>
+  <node name="mic2" pkg="roboy_audio_stream" type="roboy_audio_capture" output="screen">
+      <param name="bitrate" value="128"/>
+      <param name="device" value="mic_channel2"/>
+      <param name="channels" value="1"/>
+      <param name="sample_rate" value="8000"/>
+      <param name="topic" value="mic2"/>
+  </node>
+  <node name="mic3" pkg="roboy_audio_stream" type="roboy_audio_capture" output="screen">
+        <param name="bitrate" value="128"/>
+        <param name="device" value="mic_channel3"/>
+        <param name="channels" value="1"/>
+        <param name="sample_rate" value="8000"/>
+        <param name="topic" value="mic3"/>
+  </node>
+  <node name="mic4" pkg="roboy_audio_stream" type="roboy_audio_capture" output="screen">
+        <param name="bitrate" value="128"/>
+        <param name="device" value="mic_channel4"/>
+        <param name="channels" value="1"/>
+        <param name="sample_rate" value="8000"/>
+        <param name="topic" value="mic4"/>
+  </node>
+  <node name="mic5" pkg="roboy_audio_stream" type="roboy_audio_capture" output="screen">
+        <param name="bitrate" value="128"/>
+        <param name="device" value="mic_channel5"/>
+        <param name="channels" value="1"/>
+        <param name="sample_rate" value="8000"/>
+        <param name="topic" value="mic5"/>
+  </node>
+  <node name="mic6" pkg="roboy_audio_stream" type="roboy_audio_capture" output="screen">
+        <param name="bitrate" value="128"/>
+        <param name="device" value="mic_channel6"/>
+        <param name="channels" value="1"/>
+        <param name="sample_rate" value="8000"/>
+        <param name="topic" value="mic6"/>
+  </node>
+  <node name="mic7" pkg="roboy_audio_stream" type="roboy_audio_capture" output="screen">
+        <param name="bitrate" value="128"/>
+        <param name="device" value="mic_channel7"/>
+        <param name="channels" value="1"/>
+        <param name="sample_rate" value="8000"/>
+        <param name="topic" value="mic7"/>
+     </node>
+  </group>
+</launch>

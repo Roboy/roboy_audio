@@ -42,7 +42,7 @@ Contents:
   :caption: Interfaces and Scope
 
   ScopeContext/*
-  
+
 .. toctree::
    :maxdepth: 1
 
