@@ -3,3 +3,4 @@ build
 documentation/build
 documentation/doxyxml
 doc
+cmake-build-debug
