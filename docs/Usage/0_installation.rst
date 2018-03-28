@@ -17,6 +17,8 @@ To have them installed, you need to simply do
 In addition doa_estimation is just build and executable on a Raspberry Pi, since
 it uses it's Libraries and the current version just works with a Matrix Creator and a Pi.
 
+In the end it is mandatory for you to be the superuser when you're using the audio programs.
+
 Using command line
 ------------------
 
