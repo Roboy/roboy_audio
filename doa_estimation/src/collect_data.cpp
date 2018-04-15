@@ -47,7 +47,7 @@ int main(int argc, char *argv[]) {
         std::stringstream file_name;
         file_name << "/home/roboy/mic_" << i << ".csv";
         //data_file[i].open(file_name.str());
-        std::cout << file_name << std::endl;
+        std::cout << file_name.str() << std::endl;
     }
     /*for(int i = 0; mics.Channels(); i++) {
         for(int s = 0; s < mics.NumberOfSamples(); s++)
